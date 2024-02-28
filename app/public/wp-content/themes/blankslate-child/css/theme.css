@@ -16,7 +16,9 @@
     --main-color: #0065FC;
     --main-bg-color: #ECE2DA;
     --blocs-bg-color: #FFFFFF;
+    --logo-button-color: #DC9F96;
     --shadowy: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
     --full-width: 90rem;                            /* 1440px; width */
 
     --display-flex: flex;                           /* display */
@@ -53,20 +55,20 @@ html {
 body {
     display: var(--display-flex);
     justify-content: center;
-    line-height: 1
+    line-height: 1                      /* parent */
 }
 
-/********* ********* ********* --> */
+/********* ********* ********* -> */
 #header {
     width: 1440px;
     height: 80px;
     margin-top: 0px;
-    margin-left: 0px;
-    padding: 35px;
+    margin-left: 0px;           /*
+    padding: 35px;              */
 
-    display: var(--display-flex);
+    display: var(--display-flex); /*
     justify-content: var(--justify-between);
-
+*/
     background-color: var(--blocs-bg-color);
 }
 
@@ -74,6 +76,8 @@ body {
     display: var(--display-flex);
     width: 273px;
     height: 19px;
+    margin-left: 37px;
+    margin-top: 31px;
 }
 
 #identity {
@@ -101,11 +105,23 @@ body {
      font-weight: semi-bold;
      color: #326238;
  }
+ 
+ #menu {
+    margin-left: 630px;         /* 1440 - (500 + 273 + 37  */
+    margin-top: 0px;
+    margin-right: 0px;
+ }
 
 .menu {
     display: var(--display-flex);
     justify-content: var(--justify-around);
-    width: 600px; /* 397114+47+236: 397px */
+    width: 500px; /* 397114+47+236: 397px */
+}
+
+.menu-item {
+    display: var(--display-flex);
+    justify-content: var(--justify-around);
+    align-items: var(--align-center);
 }
 
 .menu-item a {
@@ -113,15 +129,32 @@ body {
     font-size: 16px;
     color: black;
     font-family: "Syne", sans serif;
+    text-decoration: none;
+
+    display: var(--display-flex);
+    justify-content: var(--justify-around);
 }
 
+.menu-item-63 {
+    width: 236px;
+    height: 80px;
+    background-color: #DC9F96;
+
+    display: var(--display-flex);
+    justify-content: var(--justify-around);
+    align-items: var(--align-center);
+}
+
+.menu-item-63 a span {
+    color: var(--blocs-bg-color);
+}
 
 .some-hover:hover {
     width: 500px;
     height: 250px;
 }
 
-/* <-- ********* ********* *********/
+/* <- ********* ********* *********/
 
 a {
     text-decoration-skip-ink: auto
