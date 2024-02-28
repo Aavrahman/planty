@@ -14,7 +14,7 @@
     ?>
 
     <div id="wrapper" class="hfeed">
-
+<!-- -->
         <header id="header" role="banner" class="nav-bar">
             <div id="branding">
                 <?php
