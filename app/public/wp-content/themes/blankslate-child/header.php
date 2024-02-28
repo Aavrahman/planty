@@ -20,7 +20,7 @@
                 <?php
                 echo '<div id="logo">
                                 <a href="' . esc_url(home_url('/')) . '" title="' . esc_attr(get_bloginfo('name')) . '" rel="home" itemprop="url"> 
-                                    <img src="' . esc_url(get_theme_file_uri('images/logo.png')) . '" alt="pas d\'image !" class="logo" />
+                                    <img src="' . esc_url(get_theme_file_uri('images/logo_.png')) . '" alt="pas d\'image !" class="logo" />
                                 </a>
                             </div>';
 
