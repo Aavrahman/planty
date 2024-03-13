@@ -1,14 +1,21 @@
             </main>
-        <?php get_sidebar(); ?>
-        </div> <!--         <div id="container">   -->
+            <?php get_sidebar(); ?>
+            </div> <!--         <div id="container">   -->
 
-        <footer id="footer" role="contentinfo">
-            <div id="copyright">
-                &copy; <?php echo esc_html(date_i18n(__('Y', 'blankslate'))); ?> <?php echo esc_html(get_bloginfo('name')); ?>
-            </div>
-        </footer>
-    </div>                  <!-- fin    <div id="wrapper" class="hfeed">   -->
-    <?php wp_footer(); ?>
-</body>
+            <footer id="footer" role="contentinfo">
+                <p> bonjour </p>
+                <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'footer_menu',
+                            'link_before' => '<span itemprop="name">',
+                            'link_after' => '</span>'
+                        )
+                    );
+                ?>
+            </footer>
+            </div> <!-- fin    <div id="wrapper" class="hfeed">   -->
+            <?php wp_footer(); ?>
+            </body>
 
-</html>
+            </html>

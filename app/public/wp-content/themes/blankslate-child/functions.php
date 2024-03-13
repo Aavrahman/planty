@@ -19,6 +19,12 @@ function theme_enqueue_styles()
     );          */
 }
 
+function register_ft_menu() {
+   register_nav_menu('footer_menu', __('Footer') );
+}
+add_action('init', 'register_ft_menu');
+
+/*
 add_action('after_setup_theme', 'blankslate_child_setup');
 function blankslate_child_setup() {
     add_editor_style(array(
@@ -26,3 +32,4 @@ function blankslate_child_setup() {
         get_parent_theme_file_uri('css/theme.css')
     ));
 }
+*/

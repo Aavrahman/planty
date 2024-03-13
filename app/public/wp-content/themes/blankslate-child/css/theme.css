@@ -1,23 +1,31 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-/* Import de la font Roboto depuis Google Fonts et on l'applique sur tous les éléments de la page */
-
-/********* ********* ********* -> */
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 
 :root {
-    font-size: 100%;
-    --font-weight: 700;                             /* font-weight */
-    --h1-h2--size: 22px;                            /* font-size */
-    --h3--size: 18px;                               /* font-size */
-    --search-p--size: 1.125rem;                     /* font-size */
-    --line-height: 115%;                            /* line-height */
+    width: 90rem;                                   /* 1440 px */
+    margin: 0 auto;
+    padding: 0;
 
-    --main-color: #0065FC;
-    --main-bg-color: #ECE2DA;
-    --blocs-bg-color: #FFFFFF;
-    --logo-button-color: #DC9F96;
-    --shadowy: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    --font-family: Syne;
+
+    --h1-font-size: 2.375rem;                       /* 38 px */
+    --h2-font-size: 1.875rem;                       /* 30 px */
+    --cta-font-size: 0.938rem;                      /* 15 px */
+    --menu-n-card-font-size: 1rem;                  /* 16 px */
+    --parag-font-size: 1.25rem;                     /* 20 px */
+
+    --parag-font-style: normal;
+    --parag-font-weight: 400;
+    --cta-line-height: 2.313rem;                    /* 37 px */
+    --parag-text-align: center;
+
+    --body-bg-color: #FFFFFF;
+    --container-bg-color: #ECE2DA;
+    --menu-commander-color: #DC9F96;
+    --menu-commander-hover-color: #C02E44;
+    --cta-button-color: #E0B9B4;
+    --orange-h1-h2-color: #D2776A;
+    --Commander-bg-and-h2-color: #3B8E46;
+    --text-color: #000000;
 
     --full-width: 90rem;                            /* 1440px; width */
 
@@ -29,72 +37,213 @@
     --align-center: center;                         /* align-items */
     --align-start: flex-start;                      /* align-items */
 }
-/* <- ********* ********* *********/
 
-html, body, div, span, applet, object, iframe, h1, h2, h3,
-h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address,
-big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td, article,
-aside, canvas, details, embed, figure, figcaption, footer,
-header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline
+#wrapper {
+    width: 100%;
+
+    @media all and (max-width: 1024px) {
+        width: 64rem;
+    }
+
+    @media all and (max-width: 768px) {
+        width: 48rem;
+    }
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    display: var(--display-flex);
-    justify-content: center;
-    line-height: 1                      /* parent */
-}
-
-/********* ********* ********* -> */
+/* --- --- --- --- --- --- --- --- --- H E A D E R --- --- --- --- --- --- --- --- --- */
 #header {
-    width: 1440px;
-    height: 80px;
+    width: 100%;
+    height: 5rem;                                   /* 80px; */
     margin-top: 0px;
-    margin-left: 0px;           /*
-    padding: 35px;              */
+    margin-left: 0px;
 
-    display: var(--display-flex); /*
-    justify-content: var(--justify-between);
-*/
-    background-color: var(--blocs-bg-color);
-}
-
-#branding {                     /* native */
     display: var(--display-flex);
-    width: 273px;
-    height: 19px;
-    margin-left: 37px;
-    margin-top: 31px;
+    justify-content: var(--justify-between);
+    background-color: var(--body-bg-color);
+
+    color: green;
+
+    @media (max-width: 1024px) {
+        width: 64rem;                               /* 100%; */
+        height: 3.75rem;                            /* 60px; */
+    }
+
+    @media (max-width: 768px) {
+        width: 48rem;                               /* 768px; */
+        height: 3.125rem;                            /* 50px; */
+    }
 }
 
-#identity {
-    width: 201px;
-    height: 31px;
-    margin-left: 37px;
-    margin-top: 31px;
+/* --- --- --- --- --- L O G O --- --- --- --- --- */
+#branding {                             /* native */
+    width: 19.09%;                                  /* 17.188rem; /* 37 + 201 +37 = 275px; */
+    height: 100%;                                   /* 5rem; /* 19px; */
+    display: var(--display-flex);
+    justify-content: var(--justify-around);
+    align-items: var(--align-center);
+
+    @media (max-width: 1024px) {
+        width: 17.188rem;                           /* 201px; 19.09%; /* 37 + 201 +37 = 275px; */
+    }
+
+    @media (max-width: 768px) {
+        width: 50%;
+    }
 }
 
 #logo {
     display: var(--display-flex);
-    width: 201px;
-    height: 19px;
+    align-items: var(--align-center);
+    width: 12.563rem;                               /*  201px; */
+    height: 1.188rem;                               /* 19px; */
 }
 
+/* --- --- --- --- --- M E N U --- --- --- --- --- */
+#menu {                                             /* nav tag */
+    width: 32.25rem;                                /* 516 px : (nous rencontrer:114 + 60 + Admin:46 + 60 + Commander:236) - 35,83% */
+    @media (max-width: 1024px) {
+        width: 28rem;                               /* 366.89px; */
+    }
+
+    @media (max-width: 768px) {
+        width: 50%;
+    }
+}
+
+.menu-menu-1-container {                            /* menu div container */
+    width: 100%;
+    @media (max-width: 768px) {
+        width: 100%;
+        position: relative;
+
+        display: var(--display-flex);
+        flex-direction: var(--flex-vertical);
+        justify-content: var(--justify-around);
+        align-items: var(--align-center);
+        
+        display: none;                              /* hide menu on mobile screens */
+    }
+}
+
+#hamburger {
+    width: 0px;
+    height: 0x;
+    display: none;                                  /* hide menu on desktop screens */
+
+    @media (max-width: 768px) {
+        cursor: pointer;
+        width: 3.125rem;                            /* 50px; */
+        height: 2.90rem;
+        margin-top: 0.125rem;
+        display: var(--display-flex);
+        flex-direction: var(--flex-vertical);
+        justify-content: var(--justify-around);
+        align-items: var(--align-center);
+    }
+}
+
+.hamburger-bar {
+    background-color: var(--menu-commander-color);
+    width: 90%;                                     /* 50px; */
+    height: 13.8%;                                  /* 50px; */
+}
+
+#hamburger:hover .hamburger-bar {
+        background-color: var(--menu-commander-hover-color);
+}
+
+#hamburger:hover + .menu-menu-1-container {
+    @media (max-width: 768px) {
+        display: block;
+        position: relative;
+        height: 9.375rem;                             
+        display: var(--display-flex);
+        flex-direction: var(--flex-vertical);
+    }
+}
+
+#menu-menu-1 {                                          /* nav menu ul */
+    display: var(--display-flex);
+    justify-content: var(--justify-between);
+    align-items: var(--align-center);
+        /* align-items */
+
+    width: 100%;
+    
+    @media (max-width: 768px) {
+        display: block;                                 /* vertical display for list */
+        background-color: var(--body-bg-color);
+    }
+}
+
+.menu-item {
+    display: var(--display-flex);
+    justify-content: var(--justify-between);
+    align-items: var(--align-center);
+
+    height: 3.125rem;                                   /* 50px; */
+    @media (max-width: 768px) {
+        border-top: solid 1px var(--menu-commander-color);
+    }
+}
+
+.menu-item a {
+    font-family: Syne;
+    font-size: 1rem;
+    color: black;
+    font-family: "Syne", sans serif;
+    text-decoration: none;
+
+    display: var(--display-flex);
+    justify-content: var(--justify-around);
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.menu-item-63 {
+    width: 45.73%;                                      /* 236px; */
+    height: 5rem;
+    background-color: var(--menu-commander-color);
+
+    justify-content: var(--justify-around);
+
+    @media screen (max-width: 1024px) {
+        width: 100%;
+        height: 3.75rem;                    /* 60px; */
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 3.125rem;                   /* 50px; */
+    }
+}
+
+.menu-item-63 span {
+    color: var(--body-bg-color);
+}
+
+.menu-item-63:hover, .menu-item-63:hover a span {
+    background-color: var(--menu-commander-hover-color);
+}
+
+/* --- --- --- --- --- --- --- F O O T E R --- --- --- --- --- --- --- */
+footer {
+    width: 100%;
+    height: 3.75rem;            /* 60px */
+}
+
+.menu-footer_menu-container {
+    height: 100%;        /* 60px */
+    display: var(--display-flex);
+    justify-content: var(--justify-around);
+    align-items: var(--align-center);
+ }
+
+/* ----------------------------------------------------------------------------------------
 #slug {
-    margin-left: 9px;               /* 247px; */
+    margin-left: 9px;                247px; 
     width: 72px;
     height: 14px;
 }
@@ -104,57 +253,30 @@ body {
      font-size: 12px;
      font-weight: semi-bold;
      color: #326238;
- }
- 
- #menu {
-    margin-left: 630px;         /* 1440 - (500 + 273 + 37  */
-    margin-top: 0px;
-    margin-right: 0px;
- }
+ }      */
 
-.menu {
-    display: var(--display-flex);
-    justify-content: var(--justify-around);
-    width: 500px; /* 397114+47+236: 397px */
+/* ********* ********* *********/ /*
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, 
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
 }
 
-.menu-item {
-    display: var(--display-flex);
-    justify-content: var(--justify-around);
-    align-items: var(--align-center);
+html { 
+    scroll-behavior: smooth;
 }
 
-.menu-item a {
-    font-family: Syne;
-    font-size: 16px;
-    color: black;
-    font-family: "Syne", sans serif;
-    text-decoration: none;
-
-    display: var(--display-flex);
-    justify-content: var(--justify-around);
+body {
+    line-height: 1
 }
 
-.menu-item-63 {
-    width: 236px;
-    height: 80px;
-    background-color: #DC9F96;
 
-    display: var(--display-flex);
-    justify-content: var(--justify-around);
-    align-items: var(--align-center);
-}
-
-.menu-item-63 a span {
-    color: var(--blocs-bg-color);
-}
-
-.some-hover:hover {
-    width: 500px;
-    height: 250px;
-}
-
-/* <- ********* ********* *********/
 
 a {
     text-decoration-skip-ink: auto
