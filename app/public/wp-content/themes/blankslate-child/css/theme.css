@@ -135,6 +135,7 @@
         width: 3.125rem;                            /* 50px; */
         height: 2.90rem;
         margin-top: 0.125rem;
+        margin-left: 10.43rem;
         display: var(--display-flex);
         flex-direction: var(--flex-vertical);
         justify-content: var(--justify-around);
