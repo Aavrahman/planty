@@ -3,7 +3,6 @@
             </div> <!--         <div id="container">   -->
 
             <footer id="footer" role="contentinfo">
-                <p> bonjour </p>
                 <?php
                     wp_nav_menu(
                         array(
