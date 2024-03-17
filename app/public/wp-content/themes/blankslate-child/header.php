@@ -32,22 +32,23 @@
         </div>
 
         <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                <div id="menu-icon">
-                    <div id="hamburger">
-                        <div class="hamburger-bar"> </div>
-                        <div class="hamburger-bar"> </div>
-                        <div class="hamburger-bar"> </div>
-                    </div>
+            <div id="menu-icon">
+                <div id="hamburger">
+                    <div class="hamburger-bar"> </div>
+                    <div class="hamburger-bar"> </div>
+                    <div class="hamburger-bar"> </div>
                 </div>
-                <?php
+            </div>
+
+            <?php
                 wp_nav_menu(
                     array(
-                        'theme_location' => 'main-menu',
+                        'theme_location' => 'header_menu',
                         'link_before' => '<span itemprop="name">',
                         'link_after' => '</span>'
                     )
                 );
-                ?>
+            ?>
         </nav>
     </header>
 

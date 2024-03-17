@@ -4,6 +4,8 @@
 
             <footer id="footer" role="contentinfo">
                 <?php
+
+                if (has_nav_menu('footer_menu')) {
                     wp_nav_menu(
                         array(
                             'theme_location' => 'footer_menu',
@@ -11,6 +13,7 @@
                             'link_after' => '</span>'
                         )
                     );
+                }
                 ?>
             </footer>
             </div> <!-- fin    <div id="wrapper" class="hfeed">   -->
