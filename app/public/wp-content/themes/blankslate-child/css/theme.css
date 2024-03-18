@@ -4,8 +4,7 @@
     width: 90rem;                                   /* 1440 px */
     margin: 0 auto;
     padding: 0;
-
-    --font-family: Syne;
+    font-family: "Syne", sans-serif;
 
     --h1-font-size: 2.375rem;                       /* 38 px */
     --h2-font-size: 1.875rem;                       /* 30 px */
@@ -24,7 +23,7 @@
     --menu-commander-hover-color: #C02E44;
     --cta-button-color: #E0B9B4;
     --orange-h1-h2-color: #D2776A;
-    --Commander-bg-and-h2-color: #3B8E46;
+    --commander-bg-and-h2-color: #3B8E46;
     --text-color: #000000;
 
     --full-width: 90rem;                            /* 1440px; width */
@@ -183,10 +182,8 @@
 }
 
 .menu-item a {
-    font-family: Syne;
     font-size: 1rem;
     color: black;
-    font-family: "Syne", sans serif;
     text-decoration: none;
 
     display: var(--display-flex);
@@ -226,6 +223,13 @@
 .menu-item-155:hover, .menu-item-155:hover a span {
     background-color: var(--menu-commander-hover-color);
 }
+
+/* --- --- --- --- --- --- C O N T A I N E R --- --- --- --- --- --- - */
+
+#container {
+    background-color: var(--container-bg-color);
+}
+
 
 /* --- --- --- --- --- --- --- F O O T E R --- --- --- --- --- --- --- */
 footer {

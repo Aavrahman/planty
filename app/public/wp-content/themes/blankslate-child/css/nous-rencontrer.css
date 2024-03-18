@@ -1,0 +1,17 @@
+#post-61 {
+  /*  background-color: var(--commander-bg-and-h2-color); */
+}
+
+#bloc-titre {
+    width: 1307;
+    height: 950px;
+    position: absolute;
+    margin-top: 163px;
+    margin-left: 66.5px;
+}
+
+/*
+* Must use the position property absolute, relative, fixed or sticky to use z-index and and also we can use 'top, right, bottom, left
+* Use z-index property
+* ? use the pseudoclass :before / :after
+*/
