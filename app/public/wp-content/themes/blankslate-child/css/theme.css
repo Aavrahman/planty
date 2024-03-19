@@ -23,7 +23,7 @@
     --menu-commander-hover-color: #C02E44;
     --cta-button-color: #E0B9B4;
     --orange-h1-h2-color: #D2776A;
-    --commander-bg-and-h2-color: #3B8E46;
+    --commander-bg-title-color: #3B8E46;
     --text-color: #000000;
 
     --full-width: 90rem;                            /* 1440px; width */
@@ -39,6 +39,11 @@
 
 #wrapper {
     width: 100%;
+    height: 181.875rem;                             /* 2910 px  */
+
+    /* ---- */
+    background-color: lightyellow;
+    /* ---- */
 
     @media (max-width: 1024px) {
         width: 64rem;
@@ -51,7 +56,6 @@
 
 /* --- --- --- --- --- --- --- --- --- H E A D E R --- --- --- --- --- --- --- --- --- */
 #header {
-    position: sticky;
     top: 0px;
     width: 100%;
     height: 5rem;                                   /* 80px; */
@@ -95,14 +99,17 @@
 
 /* --- --- --- --- --- M E N U --- --- --- --- --- */
 #menu {                                             /* nav tag */
-    width: 32.25rem;                                /* 516 px : (nous rencontrer:114 + 60 + Admin:46 + 60 + Commander:236) - 35,83% */
+    width: 32.25rem;                                /* 516 px : (nous rencontrer:114 + 60 + Admin:46 + 60 + Commander:236) - 35,83% *//*
+    display: var(--display-flex);
+    justify-content: flex-end;          */
     @media (max-width: 1024px) {
         width: 28rem;                               /* 366.89px; */
     }
 
     @media (max-width: 768px) {
         width: 50%;
-        cursor: pointer;
+        cursor: pointer;            /*
+        justify-content: var(--justify-center);     */
     }
 }
 
@@ -134,22 +141,36 @@
     height: 13.8%;                                              /* 50px; */
 }
 
-.menu-header_menu-container {                                   /* menu div container */
+.menu-header_menu-container,
+.menu-visiteur-container {                                      /* menu div container */
     width: 100%;
 
     @media (max-width: 768px) {
-        display: none;                                         /* hide menu on mobile screens */
+        display: none;                                          /* hide menu on mobile screens */
     }
 }
 
-#menu:hover .menu-header_menu-container {
+.menu-visiteur-container {                                      /* menu div container */
+    width: 80%;
+    position: relative;
+    margin-right: 0px;
+
+    @media (max-width: 768px) {
+        display: none;
+        /* hide menu on mobile screens */
+    }
+}
+
+#menu:hover .menu-header_menu-container,
+#menu:hover .menu-visiteur-container {                          /* menu div container */
     @media (max-width: 768px) {
         display: var(--display-flex);
         flex-direction: var(--flex-vertical); */
     }
 }
 
-#menu-header_menu {                                          /* nav menu ul */
+#menu-header_menu,
+#menu-visiteur {                                                /* nav menu ul */
     display: var(--display-flex);
     justify-content: var(--justify-between);
     align-items: var(--align-center);
@@ -175,7 +196,8 @@
     }
 }
 
-#menu-header_menu .menu-item {
+#menu-header_menu .menu-item,
+#menu-visiteur .menu-item {
     @media (max-width: 768px) {
         border-top: solid 1px var(--menu-commander-color);
     }
@@ -194,7 +216,8 @@
     }
 }
 
-.menu-item-155 {
+.menu-item-155,
+.menu-item-212 {
     width: 45.73%;                                      /* 236px; */
     height: 5rem;
     background-color: var(--menu-commander-color);
@@ -212,15 +235,18 @@
     }
 }
 
-.menu-item-155 a {
+.menu-item-155 a,
+.menu-item-212 a {
     width: 100%;                          /* 236px; */
 }
 
-.menu-item-155 span {
+.menu-item-155 span,
+.menu-item-212 span {
     color: var(--body-bg-color);
 }
 
-.menu-item-155:hover, .menu-item-155:hover a span {
+.menu-item-155:hover, .menu-item-155:hover a span,
+.menu-item-212:hover, .menu-item-212:hover a span {
     background-color: var(--menu-commander-hover-color);
 }
 
@@ -232,10 +258,11 @@
 
 
 /* --- --- --- --- --- --- --- F O O T E R --- --- --- --- --- --- --- */
-footer {
+#footer {
+    position: fixed;
+    bottom: 0px;
     width: 100%;
     height: 3.75rem;            /* 60px */
-
     @media (max-width: 768px) {
         width: 48rem;
     }

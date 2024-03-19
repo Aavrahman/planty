@@ -13,7 +13,7 @@
     wp_body_open();
     ?>
 
-    <div id=" wrapper" class="hfeed">
+    <div id="wrapper" class="hfeed">
     <!-- -->
     <header id="header" role="banner" class="nav-bar">
         <div id="branding">

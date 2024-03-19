@@ -26,12 +26,77 @@ function theme_enqueue_styles()
     );          */
 }
 
+
+/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+/* ** ** ** ** ** ** ** ** M E N U S ** ** ** ** ** ** ** **/
+
 function register_ft_menu()
 {
     register_nav_menu('footer_menu', __('Footer'));
 }
 add_action('init', 'register_ft_menu');
 
+
+/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+/** ** ** ** ** ** ** ** SHORT CODES ** ** ** ** ** ** ** **/
+
+function accueil_bloc_titre($atts)
+{
+    //Je récupère les attributs mis sur le shortcode								
+    $atts = shortcode_atts(
+        array(
+            'src' => ' ',
+            'titre' => 'Titre',
+            'src2' => '',
+            'src3' => ''
+        ),
+        $atts,
+        'titre-et-image'
+    );
+
+    ob_start();        //	Je commence à récupérer le flux d’information				
+
+    if ($atts['src'] != "") {
+?>
+
+
+        <div class="rameau" style="background-image: url(<?= $atts['src2'] ?>); object-fit:contain;"> </div>
+        <div class="titre-et-image" style="background-image: url(<?= $atts['src'] ?>)">
+            <h1 class="titre"><?= $atts['titre'] ?></h1>
+        </div>
+        <div class="rameau" style="background-image: url(<?= $atts['src3'] ?>) object-fit:contain"> </div>
+<?php
+    }
+
+    $output = ob_get_contents();  //J'arrête de récupérer le flux d'information et le stock dans la fonction $output	
+
+    ob_end_clean();
+
+    return $output;
+}
+
+add_shortcode('titre-et-image', 'accueil_bloc_titre');
+
+
+/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+/** ** ** ** ** ** ** ** MENU CONNECTE  ** ** ** ** ** ** **/
+
+function connected_menu( $args = '' ) {
+
+    if( is_user_logged_in() ) { 
+        $args['menu'] = 'header_menu';
+    } else { 
+        $args['menu'] = 'visiteur';
+    } 
+
+    return $args;
+}
+
+add_filter( 'wp_nav_menu_args', 'connected_menu' );
+
+
+
+/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
 
 /*
 function register_header_menu()
@@ -48,4 +113,9 @@ function blankslate_child_setup() {
         get_parent_theme_file_uri('css/theme.css')
     ));
 }
-*/
+
+
+<!--
+            <div class="rameau" style="background-image: url(<?= $atts['src2']) ?>)">       -->
+        
+        */

@@ -2,13 +2,33 @@
   /*  background-color: var(--commander-bg-and-h2-color); */
 }
 
-#bloc-titre {
-    width: 1307;
-    height: 950px;
+.titre-et-image {
+    width: 81.688rem;               /* 1307px; */
+    height: 59.375rem;                  /* 950px; */
     position: absolute;
     margin-top: 163px;
     margin-left: 66.5px;
+    /* *** */
+    background-color: lightblue;
+    /* *** */
 }
+
+.titre-et-image .titre {
+    font-size: var(--h1-font-size);
+    color: var(--commander-bg-title-color);
+    text-align: center;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      text-transform: uppercase;
+
+}
+
+.rameau {
+  width: 349.188px;
+    height: 400.076px;
+}
+
 
 /*
 * Must use the position property absolute, relative, fixed or sticky to use z-index and and also we can use 'top, right, bottom, left
