@@ -115,7 +115,8 @@
 
 #menu-icon {
     display: var(--display-flex);
-    justify-content: var(--justify-around);
+    justify-content: var(--justify-around);     /*
+    height: 100%;       */
 }
 
 #hamburger {
@@ -145,13 +146,16 @@
 .menu-visiteur-container {                                      /* menu div container */
     width: 100%;
 
+    @media (max-width: 1024px) {
+        height: 3.75rem;                                          /* hide menu on mobile screens */
+    }
+
     @media (max-width: 768px) {
         display: none;                                          /* hide menu on mobile screens */
     }
 }
 
 .menu-visiteur-container {                                      /* menu div container */
-    width: 80%;
     position: relative;
     margin-right: 0px;
 
@@ -176,11 +180,16 @@
     align-items: var(--align-center);
 
     width: 100%;
-    
+
+    @media (max-width: 1024px) {
+        height: 3.75rem;
+    }
+
     @media (max-width: 768px) {
         display: var(--display-flex);
         flex-direction: var(--flex-vertical);                   /* vertical display for list */
         background-color: var(--body-bg-color);
+        height: 7.75rem;
     }
 }
 
@@ -203,6 +212,12 @@
     }
 }
 
+#menu-visiteur .menu-item-213 {
+    @media (max-width: 768px) {
+        border-top: solid 0px white;                        /* rendre invisible le trait de séparation de 50%width */
+    }
+}
+
 .menu-item a {
     font-size: 1rem;
     color: black;
@@ -216,16 +231,24 @@
     }
 }
 
+.menu-item-213,
+.menu-item-215 {
+    width: 50%;
+    display: var(--display-flex);
+    justify-content: center;
+
+}
+
 .menu-item-155,
-.menu-item-212 {
+.menu-item-215 {
     width: 45.73%;                                      /* 236px; */
     height: 5rem;
     background-color: var(--menu-commander-color);
 
     justify-content: var(--justify-around);
 
-    @media screen (max-width: 1024px) {
-        width: 100%;
+    @media (max-width: 1024px) {
+        width: 45.73%%;
         height: 3.75rem;                    /* 60px; */
     }
 
@@ -236,17 +259,17 @@
 }
 
 .menu-item-155 a,
-.menu-item-212 a {
+.menu-item-215 a {
     width: 100%;                          /* 236px; */
 }
 
 .menu-item-155 span,
-.menu-item-212 span {
+.menu-item-215 span {
     color: var(--body-bg-color);
 }
 
 .menu-item-155:hover, .menu-item-155:hover a span,
-.menu-item-212:hover, .menu-item-212:hover a span {
+.menu-item-215:hover, .menu-item-212:hover a span {
     background-color: var(--menu-commander-hover-color);
 }
 

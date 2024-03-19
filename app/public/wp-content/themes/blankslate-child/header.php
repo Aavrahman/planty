@@ -41,13 +41,15 @@
             </div>
 
             <?php
-                wp_nav_menu(
-                    array(
-                        'theme_location' => 'header_menu',
-                        'link_before' => '<span itemprop="name">',
-                        'link_after' => '</span>'
-                    )
-                );
+                if (has_nav_menu('header_menu')) {
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'header_menu',
+                            'link_before' => '<span itemprop="name">',
+                            'link_after' => '</span>'
+                        )
+                    );
+                }
             ?>
         </nav>
     </header>

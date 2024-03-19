@@ -30,20 +30,33 @@ function theme_enqueue_styles()
 /** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
 /* ** ** ** ** ** ** ** ** M E N U S ** ** ** ** ** ** ** **/
 
-function register_ft_menu()
+function register_header_menu()
+{
+    register_nav_menu('header_menu', __('Main Menu'));
+}
+add_action('init', 'register_header_menu');
+/* --- */
+
+function register_footer_menu()
 {
     register_nav_menu('footer_menu', __('Footer'));
 }
-add_action('init', 'register_ft_menu');
+add_action('init', 'register_footer_menu');
+/* --- */
+
+function register_visitor_menu()
+{
+    register_nav_menu('visiteur', __('Main Menu'));
+}
+add_action('init', 'register_visitor_menu');
 
 
 /** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
 /** ** ** ** ** ** ** ** SHORT CODES ** ** ** ** ** ** ** **/
 
-function accueil_bloc_titre($atts)
-{
-    //Je récupère les attributs mis sur le shortcode								
-    $atts = shortcode_atts(
+function accueil_bloc_titre($atts)                              //* Affichage bloc superieur page  accueil_bloc_titre
+{				
+    $atts = shortcode_atts(                                     // Récupérer les attributs sasis sur le shortcode				
         array(
             'src' => ' ',
             'titre' => 'Titre',
@@ -54,7 +67,7 @@ function accueil_bloc_titre($atts)
         'titre-et-image'
     );
 
-    ob_start();        //	Je commence à récupérer le flux d’information				
+    ob_start();                                                 //Sauvegarde en mémoire de données (vars et/ou txt) qui suivent
 
     if ($atts['src'] != "") {
 ?>
@@ -68,10 +81,8 @@ function accueil_bloc_titre($atts)
 <?php
     }
 
-    $output = ob_get_contents();  //J'arrête de récupérer le flux d'information et le stock dans la fonction $output	
-
+    $output = ob_get_contents();                                // Récupération des données sauvegardées dans la var $output	
     ob_end_clean();
-
     return $output;
 }
 
