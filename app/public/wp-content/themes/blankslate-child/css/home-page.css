@@ -1,39 +1,71 @@
-.wp-block-columns {
-  width: 100%;  /* 1307px; */
+/* --- --- --- --- --- --- --- --- SECTION SUPERIEUR --- --- --- --- --- --- --- --- */
+
+.wp-block-columns {                                 /* Bloc conteneur de la section superieure  */
+  width: 100%;                                      /* 1307px; */
   height: 950px;
+  @media (max-width: 1024px) {
+    width: 64rem;
+  }
+  @media (max-width: 768px) {
+    width: 48rem;
+  }
 }
 
-.titre-et-image {
-  width: 81.688rem;
-  /* 1307px; */
-  height: 59.375rem;
-  /* 950px; */
+.wp-block-column {                                  /* Bloc conteneur du bloc shortcode et images des rameaux */
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5.188rem;                            /* 83px */
+  padding-left: 4.156rem;                           /* 66.5px;  */
+  padding-right:4.156rem;                           /* 66.5px;  */
+
+  @media (max-width: 1024px) {
+    width: 64rem;
+    padding-top: 4rem;                              /* 64px */
+    padding-left: 3rem;                             /* 48px */
+    padding-right: 3rem;                            /* 48px */
+    display: flex;
+    justify-content: var(--justify-center);
+  }
+
+  @media (max-width: 768px) {
+    width: 48rem;
+    padding-top: 3rem;
+  }
+
+}
+
+/* --- Bloc short code : Titre et image de la canette */
+
+.titre-et-image {                                   /* Bloc du shortcode et des 2 images des rameaux */
+  width: 81.688rem;                                 /* 1344px; */
+  height: 59.375rem;                                /* 950px; */
   position: absolute;
-  z-index: 10;
+  z-index: 5;
+
+  @media (max-width: 1024px) {                /* 1307px; */
+    width: 84rem;                       /* 1307px; */
+  }
+
+  @media (max-width: 768px) {}
+
 }
 
 .titre-et-image .titre {
   font-size: var(--h1-font-size);
   color: var(--commander-bg-title-color);
   text-align: center;
-  font-style: normal;
+  font-style: var(--parag-font-style);
   font-weight: 800;
   line-height: normal;
   text-transform: uppercase;
- 
-}
 
-/* --- */
+  @media (max-width: 1024px) {
+    font-weight: 775;
+  }
 
-.wp-block-column {
-  /*
-  position:relative;    */
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 83px;
-  padding-left: 66.5px;
-  padding-right: 66.5px;
-}
+ }
+
+/* --- Les 2 blocs des images des 2 rameaux */
 
 .wp-block-image {
   display: inline-block;
@@ -46,7 +78,7 @@
 .wp-image-169,
 .wp-image-168 {
   position: relative;
-  top: 307px;
+  top: 19.188rem;                                   /* 307px; */
 }
 
 .wp-image-169 {
@@ -54,18 +86,15 @@
   right: 0px;
 }
 
-/*
-.wp-image-168 {
-  position: relative;
-  top: 307px;
+/* --- --- --- --- --- --- --- --- --- SECTION TEXTE --- --- --- --- --- --- --- --- */
+
+.wp-block-column .wp-block-heading {
+  display: block;
 }
-*/
-#bloc-titre {
-  width: 1307;
-  height: 950px;
-  position: absolute;
-  margin-top: 163px;
-  margin-left: 66.5px;
+
+.wp-block-column p  {
+   display: block;
+   clear: both;
 }
 
 /*

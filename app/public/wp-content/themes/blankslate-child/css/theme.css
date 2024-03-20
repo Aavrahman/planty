@@ -156,14 +156,15 @@
     margin-right: 0px;
 
     @media (max-width: 768px) {
-        display: none;
-        /* hide menu on mobile screens */
+        display: none;                                          /* hide menu on mobile screens */
     }
 }
 
 #menu:hover .menu-header_menu-container,
 #menu:hover .menu-visiteur-container {                          /* menu div container */
     @media (max-width: 768px) {
+        position: relative;
+        z-index: 10;
         display: var(--display-flex);
         flex-direction: var(--flex-vertical); */
     }
