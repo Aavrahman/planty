@@ -41,7 +41,7 @@
             </div>
 
             <?php
-                if (has_nav_menu('header_menu')) {
+          //      if (has_nav_menu('header_menu')) {
                     wp_nav_menu(
                         array(
                             'theme_location' => 'header_menu',
@@ -49,7 +49,7 @@
                             'link_after' => '</span>'
                         )
                     );
-                }
+         //       }
             ?>
         </nav>
     </header>

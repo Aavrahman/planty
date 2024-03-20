@@ -1,34 +1,72 @@
-#post-61 {
-  /*  background-color: var(--commander-bg-and-h2-color); */
+.wp-block-columns {
+  width: 100%;  /* 1307px; */
+  height: 950px;
 }
 
 .titre-et-image {
-    width: 81.688rem;               /* 1307px; */
-    height: 59.375rem;                  /* 950px; */
-    position: absolute;
-    margin-top: 163px;
-    margin-left: 66.5px;
-    /* *** */
-    background-color: lightblue;
-    /* *** */
+  width: 81.688rem;
+  /* 1307px; */
+  height: 59.375rem;
+  /* 950px; */
+  position: absolute;
+  z-index: 10;
 }
 
 .titre-et-image .titre {
-    font-size: var(--h1-font-size);
-    color: var(--commander-bg-title-color);
-    text-align: center;
-      font-style: normal;
-      font-weight: 800;
-      line-height: normal;
-      text-transform: uppercase;
-
+  font-size: var(--h1-font-size);
+  color: var(--commander-bg-title-color);
+  text-align: center;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+ 
 }
 
-.rameau {
-  width: 349.188px;
-    height: 400.076px;
+/* --- */
+
+.wp-block-column {
+  /*
+  position:relative;    */
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 83px;
+  padding-left: 66.5px;
+  padding-right: 66.5px;
 }
 
+.wp-block-image {
+  display: inline-block;
+  width: 49%;
+  position: relative;
+  top: 0px;
+  height: 100%
+}
+
+.wp-image-169,
+.wp-image-168 {
+  position: relative;
+  top: 307px;
+}
+
+.wp-image-169 {
+  position: absolute;
+  right: 0px;
+}
+
+/*
+.wp-image-168 {
+  position: relative;
+  top: 307px;
+}
+*/
+#bloc-titre {
+  width: 1307;
+  height: 950px;
+  position: absolute;
+  margin-top: 163px;
+  margin-left: 66.5px;
+}
 
 /*
 * Must use the position property absolute, relative, fixed or sticky to use z-index and and also we can use 'top, right, bottom, left
