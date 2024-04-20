@@ -1,0 +1,497 @@
+/* --- --- --- --- --- --- --- --- SECTION SUPERIEURE --- --- --- --- --- --- --- --- */
+
+/* --- Titre h1 : BOISSON ENERGISANTE 100% NATURELLE --- */
+.entry-content h1:nth-child(1) {
+  top: 11.563rem;  /* 185px; */
+  color: var(--commander-bg-title-color);
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    top: 6.5rem;              /* 140px  */
+    left: 22%;                  /* 234px * 100 / 1024 */
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    top: 7rem;
+    width: 100%;
+  }
+}
+
+/* --- CONTENEUR EXTERIEUR DES GRAPHIQUES --- */
+.entry-content .wp-block-columns:nth-child(2) {
+  position: absolute;
+  top: 6.25rem;
+  top: 10.188rem; /* 163px */
+  width: 100%; /* 1440px; */
+  height: 59.375rem;   /* 950px; */
+  fill: #E3D9D0;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+    height: 40rem;      /* 883px; */
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 100%;
+    height: 28rem;
+    top: 7rem;
+  }
+}
+
+/* --- CONTENEUR INTERIEUR DES GRAPHIQUES --- */
+.entry-content .wp-block-columns:nth-child(2) .wp-block-column {
+  position: relative;
+  height: 59.375rem;                /* 950px; */
+  display: var(--display-flex);
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    height: 40rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    height: 28rem;
+  }
+
+}
+
+/* --- shortcode Logo Canette --- */
+.titre-et-image img {
+  width: 81.688rem;                                 /* 1344px; */
+  height: 59.375rem;                                /* 950px; */
+  position: absolute;
+  left: 58px;
+
+  z-index: 5;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+    left: 0px;
+    height: 40rem;                  /* 883px; */
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 100%;
+    height: 30rem;
+    left: 0rem;
+  }
+}
+
+/* --- Les 2 blocs d'images des 2 rameaux --- */
+.entry-content .wp-block-columns:nth-child(2) .wp-block-column figure {
+  display: inline-block;
+  width: 720px;
+  position: relative;
+  top: 0px;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 50%;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 24rem;
+  }
+
+}
+
+.wp-image-168 {
+  position: relative;
+  left: 2px;
+}
+
+.wp-image-169 {
+  position: absolute;
+  right: 0px;
+}
+
+.wp-image-168, .wp-image-169 {
+  width: 21.875rem;         /* 350px     */
+  top: 19.188rem;           /* 307px; */
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 15.356rem;    /* 245.7px  */
+    top: 12rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    top: 8rem;
+    width: 12rem;
+  }
+}
+
+/* --- --- --- --- --- - DEUXIEME SECTION : Titre et paragraphe - --- --- --- --- --- */
+
+.entry-content .wp-block-columns:nth-child(3) {
+  position: absolute;
+  top: 58rem;               /*  928px */
+  z-index: 10;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    top: 40rem;
+    width: 100%;
+  }
+
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    top: 35rem;
+    width: 100%;
+  }
+}
+
+/* --- SOUS - SECTION PRESENTATION --- */
+.entry-content .wp-block-columns:nth-child(3) #accueil-presentation {
+  min-width: 90rem;                         /* 1440 */
+  height: 25.938rem;          /*415px;      */
+  background-image: url('http://planty.local/wp-content/uploads/2024/04/svg-1.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    min-width: 48rem;
+    height: 17rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    min-width: 20rem;
+    height: 21rem;
+  }
+}
+
+.accueil-presentation-h2 {
+  font-weight: 700;
+  top: 8.125rem;                                /* 130px; */
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    top: 3rem;
+    width: 100%;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    top: 2.8rem;
+  }
+}
+
+.accueil-presentation-p {
+  position: relative;
+  top: 13.313rem;                         /*  213px;  */
+  left: 32.5%; /*  472px; */
+
+  width: 34.5%; /* 497px; */
+  
+  color: #000;
+  text-align: center;
+  font-size: 1.25rem; /* 20px; */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 75%;
+    top: 6rem;;
+    left: 10%;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 90%;
+    top: 3rem;
+    left: 5%;
+  }
+}
+
+/* --- --- --- --- --- --- -- SECTION PRESENTATION PRODUITS - --- --- --- --- --- --- */
+
+/* titre 'LES GOUTS'*/
+.entry-content h2:nth-child(4) {
+  position: absolute;
+  top: 87.563rem;                             /*1401px; */
+  
+  width: 90rem;
+  color: #D2776A;
+  text-align: center;
+  font-size: 1.875rem; /* 30px; */
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+    top: 60rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 100%;
+    top: 63rem;
+  }
+}
+
+/* La phrase paragraphe */
+.entry-content p:nth-child(5) {
+  position: absolute;
+  top: 90.44rem;                      /* 1444px;  */
+
+  width: 90rem;
+  color: black;
+  text-align: center;
+  font-size: 1.25rem; /* 20px; */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    max-width: 100%;
+    top:63rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    max-width: 100%;
+    top: 68rem;
+  }
+}
+
+/* --- --- --- SOUS - SECTION PRODUIT : THE CARDS --- --- --- */
+
+/* -- Outer column container -- */
+.entry-content .wp-block-columns:nth-child(6) {
+  position: absolute;
+  top: 94.75rem;                      /* 1516px;  */
+
+  height: 37.875rem;                  /* 606px : (263 * 2) + 80 ( 40 * 2) */
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    top: 66rem;
+    width: 100%;
+    height: 32.5rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    top: 77rem;
+    left: 0rem;
+  }
+}
+
+/* -- Inner column container -- */
+.entry-content .wp-block-columns:nth-child(6) .wp-block-column {
+  position: relative;
+  margin: 0 auto;
+  left: 18.5rem;                      /* 21.66%;   /* 312px;  */
+  width: 52.875rem;                   /* 846px;    /* (393 * 2) + 60 (15 * 2) */
+
+  display: var(--display-flex);
+  flex-wrap: wrap;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    left: 12%;
+    right: 12%;
+    margin: auto;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    left: 0rem;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+/* -- cards --  */
+.image-produit {
+  width: 24.563rem;             /* 393px; */
+  height: 16.375rem;            /* 262px; */
+
+  margin-left: 0.938rem; /*15px; */
+  margin-right: 0.938rem; /* 15px; */
+
+  display: var(--display-flex);
+  justify-content: var(--justify-around);
+  align-items: var(--align-center);
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 20rem; /*  320px; */
+    height: 13.75rem; /*  220px;  */
+    margin: 0.75rem; /* 12px; */
+  }
+
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    width: 100%;
+    height: 12.5rem; /* 200px; */
+    background-size: cover;
+    margin: 0.75rem; /*  12px; */
+  }
+}
+
+/* -- titles --  */
+.nom-produit {
+  color: var(--body-bg-color);
+  text-align: center;
+  font-family: Syne;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: var(--font-weight-1);                /*  800;  */
+  line-height: normal;
+}
+
+/* --- --- --- SOUS - SECTION PRODUIT : THE CTA - --- --- --- */
+
+.entry-content .wp-block-columns:nth-child(6) .wp-block-column .image-produit .nom-produit {
+  font-size: var(--card-font-size);
+  color: var(--body-bg-color);
+  text-align: center;
+  font-style: var(--parag-font-style);
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: var(--tablet-cta-font-size);
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    font-size: var(--mobile-card-font-size);
+  }
+}
+
+.button-box {
+  position: absolute;
+  top: 133rem;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    top: 100rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    top: 137rem;
+  }
+}
+
+
+/* --- --- --- --- --- --- --- --- -- BOTTOM SECTION --- --- --- --- --- --- --- --- */
+
+/* -- bloc exterieur avec graphe de canettes -- */
+div.entry-content>div:nth-child(8) {
+  position: absolute;
+  top: 138.25rem;       /* 2212px;    */
+
+  width: var(--full-width);
+  height: 39.875rem; /* 638px;  */
+
+  background-image: url("http://planty.local/wp-content/uploads/2024/04/svg2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    top: 108.125rem;
+    height: 31.25rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    top: 154rem;        /*    2048px;   */
+    height: 39.5rem;
+  }
+
+}
+
+/* -- bloc interieur : image des canettes -- */
+.image-canettes,
+.rencontrer figure:nth-of-type(3) .wp-image-170 {
+  position: absolute;
+  bottom: 0;
+
+  width: var(--full-width);
+  height: 8.875rem;   /* 142px; */
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    height: 6.83rem;
+  }
+}
+
+/* --- --- --- BLOC DU TITRE h2 'CE QU’ILS EN PENSENT' --- --- ---*/
+.entry-content div:nth-child(9) {
+  position: absolute;
+  top: 146.563rem;
+  width: 90rem;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    top: 112rem;
+    width: 100%;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    top: 148rem;
+    width: 100%;
+  }
+}
+
+/* -- Le Titre h2 (CE QU’ILS EN PENSENT) -- */
+.entry-content .wp-container-core-columns-layout-5 .wp-block-heading {
+  font-weight: 800;
+
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+}
+
+/* --- --- --- BLOC DU FEEDBACK --- --- ---*/
+/* LE BLOC CONTENEUR */
+.entry-content div:nth-child(10) {
+  position: absolute;
+  top: 154.063rem;
+  left: 8.25rem;
+  width: 73.188rem;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    top: 118rem;
+    width: 100%;
+    left: 0rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    width: 100%;
+    top: 155rem;
+    left: 0rem;
+  }
+}
+
+/* -- La boite -- */
+.feedback-box {
+  display: var(--display-flex);
+  justify-content: var(--justify-between);
+  margin: 0.5rem;
+}
+
+/* L'image */
+.feed-img {
+  width: 7.893rem;    /* 126.28px;    */
+  height: 8.688;      /* 139px; */
+}
+
+/* La sous boite contenant nom et texte du commentaire */
+.retour {
+  width: 13.5rem; /* 216px; */
+  height: 8.688rem; /* 139px; */
+  display: var(--display-flex);
+  flex-direction: var(--flex-vertical);
+  justify-content: var(--justify-around);
+}
+
+/* Le nom du client */
+.customer-name {
+  color: var(--commander-bg-title-color);
+  font-size: var(--h2-font-size);
+  font-style: var(--parag-font-style);
+  font-weight: 700;
+}
+
+/* Le commentaire du client */
+.feed-text {
+  width: 196px;
+
+  font-size: var(--menu-n-card-font-size);
+  font-style: var(--parag-font-style);
+  text-align: left;
+}
+
+/*
+* Must use the position property absolute, relative, fixed or sticky to use z-index and and also we can use 'top, right, bottom, left
+* Use z-index property
+* ? use the pseudoclass :before / :after
+*/
