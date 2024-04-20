@@ -81,9 +81,6 @@ function accueil_carte_produit($atts)
 
     if ($atts['src'] != "") {
     ?>
-        <!--
-        <div class="image-produit" style="background-image: url(< ?= $atts['src'] ?>);">
-    -->
         <div class="image-produit">
             <img src="<?= $atts['src'] ?>">
             <h2 class=" nom-produit"><?= $atts['nom-produit'] ?></h2>
@@ -192,8 +189,6 @@ function retour_d_experience($atts)
 
 add_shortcode('feedback', 'retour_d_experience');
 
-/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
-
 
 /** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
 /* ** ** ** ** ** P A G E - NOUS - RENCONTRER ** ** ** ** **/
@@ -219,8 +214,7 @@ function lequipe($atts)
             <p class="member-name"><?= $atts['member-name'] ?></p>
             <p><?= $atts['member-duty'] ?></p>
         </div>
-
-<?php
+    <?php
     }
 
     $output = ob_get_contents();
@@ -229,6 +223,7 @@ function lequipe($atts)
 }
 
 add_shortcode('the-staff', 'lequipe');
+
 
 /** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
 /* ** ** ** ** ** ** P A G E - COMMANDER * ** ** ** ** ** **/
@@ -266,7 +261,6 @@ function corbeille($atts)
 
 <?php
     }
-
     $output = ob_get_contents();
     ob_end_clean();
 

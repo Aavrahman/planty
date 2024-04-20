@@ -393,3 +393,18 @@ h1 {
     font-weight: var(--parag-font-weight);
     line-height: var(--cta-line-height);
 }
+
+input[type="submit"] {
+    display: block;
+    width: 198px;
+    height: 55px;
+    padding: 9px 57px 9px 56px;
+    border-radius: 5px;
+    background: var(--cta-button-color);
+    color: var(--body-bg-color);
+    text-align: var(--parag-text-align);
+    font-size: var(--cta-font-size);
+    font-style: var(--parag-font-style);
+    font-weight: var(--parag-font-weight);
+    line-height: var(--cta-line-height);
+}

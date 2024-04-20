@@ -1,14 +1,15 @@
 /* --- LE TEMPLATE --- */
 .commander {
-    position: absolute; /*
+    position: absolute;
+    /*
     top: 5rem;  */
     left: 0px;
     height: 1232px;
-        
+
     display: flex;
     flex-wrap: wrap;
     width: 100%;
- 
+
     background-color: var(--commander-bg-title-color);
 
     @media (min-width: 320px) and (max-width: 768.99px) {
@@ -37,8 +38,10 @@ hr {
 
 /* --- --- Séparateurs de section <hr> --- --- */
 .wp-block-separator {
-    left: 20.27%;       /* 292px;   */
-    width: 59.72%;      /* 860px; */
+    left: 20.27%;
+    /* 292px;   */
+    width: 59.72%;
+    /* 860px; */
 
     @media (min-width: 768px) and (max-width: 1024px) {
         left: 5%;
@@ -70,7 +73,8 @@ hr {
 .commander h2.wp-block-heading:nth-of-type(1) {
     position: absolute;
     top: 224px;
-    left: 20.27%;           /* 292px;   */
+    left: 20.27%;
+    /* 292px;   */
     color: var(--body-bg-color);
     font-size: var(--h2-font-size);
     font-style: var(--parag-font-style);
@@ -92,13 +96,13 @@ hr {
 /* --- --- --- --- --- --- LES CARTES --- --- --- --- --- --- */
 /* --- --- Le conteneur de la section 'Cartes' --- --- */
 
-.wp-container-core-columns-layout-1 {
+.wp-container-core-columns-is-layout-1 {
     position: absolute;
     top: 299px;
-    left: 20.27%;       /* 292px;   */
-    width: 59.72%;      /* 860px; */
+    left: 20.27%;     /* 292px;   */
+    width: 59.72%;     /* 860px; */
     height: 199px;
-    
+
     @media (min-width: 768px) and (max-width: 1024px) {
         left: 5%;
         width: 90%;
@@ -112,9 +116,10 @@ hr {
     }
 }
 
-.wp-container-core-columns-layout-1 .wp-block-column {
+.wp-container-core-columns-is-layout-1 .wp-block-column {
     width: 193.21px;
-    height: 128.97px;
+    height: 199px;
+
     @media (min-width: 320px) and (max-width: 768.99px) {
         height: 24%;
         display: var(--display-flex);
@@ -123,11 +128,12 @@ hr {
     }
 }
 
-
-.wp-container-core-columns-layout-1 .wp-block-column .image-produit {
+.wp-container-core-columns-is-layout-1 .wp-block-column .image-produit {
     position: relative;
-    width: 100%;        /* 193.6px; */
-    height: 100%;
+    width: 100%;
+    /* 193.6px; */
+    height: 128.97px;
+    /* 100%; */
     margin-left: 0;
     margin-right: 0;
 
@@ -135,7 +141,7 @@ hr {
         margin-top: 0;
         margin-bottom: 1rem;
     }
-        
+
     @media (min-width: 320px) and (max-width: 768.99px) {
         margin: 0;
         height: 100%;
@@ -143,10 +149,11 @@ hr {
 }
 
 /* --- Fond de la carte --- */
-.wp-container-core-columns-layout-1 .wp-block-column .image-produit img {
+.wp-container-core-columns-is-layout-1 .wp-block-column .image-produit img {
     position: absolute;
     top: 0px;
-    width: 100%;        /* 192.533px;   */
+    width: 100%;
+    /* 192.533px;   */
     height: 100%;
     margin: 0;
 
@@ -158,7 +165,7 @@ hr {
 
 /* --- L'intitulé de la carte --- */
 /* - Le Layout - */
-.wp-container-core-columns-layout-1 .wp-block-column .image-produit .div-nom {
+.wp-container-core-columns-is-layout-1 .wp-block-column .image-produit .div-nom {
     display: flex;
     width: 149.2px;
     height: 28.415px;
@@ -168,7 +175,7 @@ hr {
 }
 
 /* - Le texte, Typographie - */
-.wp-container-core-columns-layout-1 .wp-block-column .image-produit .nom-produit {
+.wp-container-core-columns-is-layout-1 .wp-block-column .image-produit .nom-produit {
     font-size: 20px;
     z-index: 5;
 
@@ -190,7 +197,7 @@ hr {
     display: var(--display-flex);
     justify-content: var(--justify-between);
 
-    @media (min-width: 320px) and (max-width: 767.99px){
+    @media (min-width: 320px) and (max-width: 767.99px) {
         position: relative;
         width: 96%;
         left: 2%;
@@ -199,7 +206,8 @@ hr {
 
 /* --- --- --- zéro, plus, moins : le cadre --- --- --- */
 .choix-cadre {
-    width: 82px; /* 40%; */
+    width: 82px;
+    /* 40%; */
     height: 56px;
     display: var(--display-flex);
 
@@ -316,6 +324,7 @@ hr {
 
 .wp-block-separator:nth-of-type(2) {
     top: 538px;
+
     @media (min-width: 320px) and (max-width: 768.99px) {
         top: 1305px;
     }
@@ -373,7 +382,8 @@ hr {
 }
 
 /* --- --- --- --- --- --- Volets 'Vos informations' et 'Livraison' --- --- --- --- --- --- */
-#order-form .left-side, #order-form .right-side {
+#order-form .left-side,
+#order-form .right-side {
     position: relative;
     top: 0px;
     display: block;
@@ -436,7 +446,8 @@ hr {
 }
 
 /* --- --- --- --- --- --- Les labels - positionnement vertical --- --- --- --- --- --- */
-#order-form p, #order-form p label {
+#order-form p,
+#order-form p label {
     width: 100%;
     height: 108px;
     display: var(--display-flex);
@@ -444,7 +455,7 @@ hr {
     align-content: space-between;
 }
 
-#order-form  p:nth-of-type(1) {
+#order-form p:nth-of-type(1) {
     position: absolute;
     top: 65px;
 }
@@ -463,7 +474,8 @@ hr {
 #wpcf7-f462-p61-o1 .wpcf7-form p:nth-of-type(1) input[value="Commander"] {
     position: absolute;
     bottom: 0px;
-    left: 38.5%;    /* left: 331px;    */
+    left: 38.5%;
+    /* left: 331px;    */
 
     @media (min-width: 320px) and (max-width: 768.99px) {
         left: 23%;
