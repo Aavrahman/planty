@@ -21,14 +21,19 @@
   }
 }
 
-/* --- CONTENEUR EXTERIEUR DES GRAPHIQUES --- */
+/* --- CONTENEUR EXTERIEUR DES GRAPHIQUES --- */  /*
 .entry-content .wp-block-columns:nth-child(2) {
+*/
+.entry-content .wp-container-core-columns-is-layout-1 {
+
   position: absolute;
   top: 6.25rem;
   top: 10.188rem; /* 163px */
+  left: 0px;;
   width: 100%; /* 1440px; */
   height: 59.375rem;   /* 950px; */
   fill: #E3D9D0;
+
 
   @media (min-width: 768px) and (max-width: 1024px) {
     width: 100%;
@@ -59,12 +64,15 @@
 }
 
 /* --- shortcode Logo Canette --- */
-.titre-et-image img {
-  width: 81.688rem;                                 /* 1344px; */
+.titre-et-image {
+  width: 93.33%;                                 /* 1344px; */
   height: 59.375rem;                                /* 950px; */
   position: absolute;
-  left: 58px;
+  left: 4.02%;        /*   58px;    */
+}
 
+.titre-et-image img {
+  position: absolute;
   z-index: 5;
 
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -83,23 +91,23 @@
 /* --- Les 2 blocs d'images des 2 rameaux --- */
 .entry-content .wp-block-columns:nth-child(2) .wp-block-column figure {
   display: inline-block;
-  width: 720px;
+  width: 50%;     /* 720px; */
   position: relative;
-  top: 0px;
+  top: 19rem;
 
   @media (min-width: 768px) and (max-width: 1024px) {
     width: 50%;
   }
 
   @media (min-width: 320px) and (max-width: 767px) {
-    width: 24rem;
+/*    width: 24rem; */
   }
 
 }
 
 .wp-image-168 {
   position: relative;
-  left: 2px;
+  left: 10px;
 }
 
 .wp-image-169 {
@@ -109,7 +117,6 @@
 
 .wp-image-168, .wp-image-169 {
   width: 21.875rem;         /* 350px     */
-  top: 19.188rem;           /* 307px; */
 
   @media (min-width: 768px) and (max-width: 1024px) {
     width: 15.356rem;    /* 245.7px  */
@@ -262,11 +269,14 @@
 
 /* --- --- --- SOUS  SECTION PRODUIT : THE CARDS --- --- --- */
 
-/* -- Outer column container -- */
-.entry-content .wp-block-columns:nth-child(6) {
+/* -- Outer column container -- */  /*
+.entry-content .wp-block-columns:nth-child(6) { */
+.wp-container-core-columns-is-layout-3 {
   position: absolute;
   top: 94.75rem;                      /* 1516px;  */
+  left: 20.27%;
 
+  width: 59.72%;
   height: 37.875rem;                  /* 606px : (263 * 2) + 80 ( 40 * 2) */
 
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -284,7 +294,7 @@
 /* -- Inner column container -- */
 .entry-content .wp-block-columns:nth-child(6) .wp-block-column {
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto;  /*
   left: 18.5rem;                      /* 21.66%;   /* 312px;  */
   width: 52.875rem;                   /* 846px;    /* (393 * 2) + 60 (15 * 2) */
 

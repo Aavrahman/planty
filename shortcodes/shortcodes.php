@@ -66,6 +66,7 @@ add_shortcode('titre-et-paragraphe-1', 'accueil_bloc2_developpement');
 /** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
 
 /** ** bloc présentation produits - image et titre ** ** **/
+
 function accueil_carte_produit($atts)
 {
     $atts = shortcode_atts(
@@ -81,9 +82,8 @@ function accueil_carte_produit($atts)
 
     if ($atts['src'] != "") {
     ?>
-        <div class="image-produit">
-            <img src="<?= $atts['src'] ?>">
-            <h2 class=" nom-produit"><?= $atts['nom-produit'] ?></h2>
+        <div class="image-produit" style="background-image: url(<?= $atts['src'] ?>)">
+            <h2 class="nom-produit"><?= $atts['nom-produit'] ?></h2>
         </div>
     <?php
     }
