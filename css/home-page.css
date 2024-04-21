@@ -41,12 +41,19 @@
 
   @media (min-width: 320px) and (max-width: 767px) {
     width: 100%;
-    height: 28rem;
+    height: 27rem;
     top: 3rem;
   }
 }
 
 /* --- CONTENEUR INTERIEUR DES GRAPHIQUES --- */
+#post-99 .entry-content .wp-container-core-columns-is-layout-1 .wp-block-column {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    flex-direction: row;
+  }
+}
+
+
 .entry-content .wp-block-columns:nth-child(2) .wp-block-column {
   position: relative;
   height: 59.375rem;                /* 950px; */
@@ -112,8 +119,10 @@
   }
 
   @media (min-width: 320px) and (max-width: 767px) {
-    top: 0px;
-    width: 50%;
+    top: 11rem;
+    left:25%;
+    width: 25%;
+    height: 100px;
   }
 
 }
@@ -133,11 +142,11 @@
 
   @media (min-width: 768px) and (max-width: 1024px) {
     width: 15.356rem;    /* 245.7px  */
-    top: 12rem;
+    top: 3rem;
   }
 
   @media (min-width: 320px) and (max-width: 767.98px) {
-    top: 8rem;  /*
+    top: auto; /* 8rem;  /*
     width: 12rem; */
   }
 }
@@ -155,8 +164,15 @@
   }
 
   @media (min-width: 320px) and (max-width: 767.98px) {
-    top: 27rem;
+    top: 24rem;
     width: 100%;
+    height: 285px;
+  }
+}
+
+.entry-content .wp-block-columns:nth-child(3) .wp-block-column {
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    height: 285px;
   }
 }
 
@@ -179,7 +195,8 @@
 
   @media (min-width: 320px) and (max-width: 767px) {
     min-width: 20rem;
-    height: 21rem;
+    height: 285px;
+    background-size: auto;
   }
 }
 
@@ -254,7 +271,7 @@
 
   @media (min-width: 320px) and (max-width: 767px) {
     width: 100%;
-    top: 55rem;
+    top: 46rem;
   }
 }
 
@@ -278,7 +295,7 @@
 
   @media (min-width: 320px) and (max-width: 767px) {
     max-width: 100%;
-    top: 58rem;
+    top: 49rem;
   }
 }
 
@@ -302,8 +319,10 @@
   }
 
   @media (min-width: 320px) and (max-width: 767px) {
-    top: 63rem;
+    top: 55rem;
     left: 0rem;
+    width: 100%;
+    height: 56rem;
   }
 }
 
@@ -365,6 +384,27 @@
 
 /* --- --- --- SOUS  SECTION PRODUIT : THE CTA - --- --- --- */
 
+.button-box {
+  position: absolute;
+  top: 133rem;
+
+  width: 90rem;
+
+  display: var(--display-flex);
+  justify-content: var(--justify-around);
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+    top: 100rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 100%;
+    top: 113rem;
+  }
+}
+
+
 .entry-content .wp-block-columns:nth-child(6) .wp-block-column .image-produit .nom-produit {
   font-size: var(--card-font-size);
   color: var(--body-bg-color);
@@ -404,8 +444,9 @@ div.entry-content>div:nth-child(8) {
   }
 
   @media (min-width: 320px) and (max-width: 767px) {
-    top: 128rem;        /*    2048px;   */
-    height: 65.5rem;
+    top: 120rem;        /*    2048px;   */
+    height: 73.5rem;
+    background-size: auto;
   }
 
 }
@@ -417,6 +458,7 @@ div.entry-content>div:nth-child(8) {
 
   width: var(--full-width);
   height: 8.875rem;   /* 142px; */
+  background-repeat: no-repeat;
 }
 
 /* --- --- --- BLOC DU TITRE h2 'CE QU’ILS EN PENSENT' --- --- ---*/
@@ -431,7 +473,7 @@ div.entry-content>div:nth-child(8) {
   }
 
   @media (min-width: 320px) and (max-width: 767px) {
-    top: 136.563rem;
+    top: 123rem;
     width: 100%;
   }
 }
@@ -450,6 +492,8 @@ div.entry-content>div:nth-child(8) {
 /* --- --- --- BLOC DU FEEDBACK --- --- ---*/
 
 /* LE BLOC CONTENEUR */
+
+
 .entry-content div:nth-child(10) {
   position: absolute;
   top: 154.063rem;            /* 2465px;  */
@@ -464,7 +508,7 @@ div.entry-content>div:nth-child(8) {
 
   @media (min-width: 320px) and (max-width: 767.98px) {
     width: 100%;
-    top: 146rem;        /* 2336px */
+    top: 133rem;        /* 2336px */
     left: 0rem;
   }
 }

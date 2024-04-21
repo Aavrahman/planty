@@ -116,7 +116,7 @@ hr {
     }
 }
 
-.wp-container-core-columns-is-layout-1 .wp-block-column {
+#post-61 .commander .wp-container-core-columns-is-layout-1 .wp-block-column {
     width: 193.21px;
     height: 199px;
 
@@ -143,7 +143,8 @@ hr {
     }
 
     @media (min-width: 320px) and (max-width: 768.99px) {
-        margin: 0;
+        margin: 2%;
+        width: 96%;
         height: 100%;
     }
 }

@@ -353,7 +353,7 @@ h1 {
     align-items: var(--align-center);
 }
 
-/* --- --- --- --- --- --- --- -- C T A --- --- --- --- --- --- --- --- */
+/* --- --- --- --- --- --- --- -- C T A --- --- --- --- --- --- --- --- *//*
 .button-box {
     position: absolute;
     top: 133rem;
@@ -373,7 +373,7 @@ h1 {
         top: 121rem;
     }
 }
-
+*/
 .button-text:hover {
     background-color: var(--menu-commander-hover-color);
 }
