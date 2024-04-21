@@ -196,7 +196,8 @@
   @media (min-width: 320px) and (max-width: 767px) {
     min-width: 20rem;
     height: 285px;
-    background-size: auto;
+    background-image: url();
+    background-color: var(--body-bg-color);
   }
 }
 
@@ -243,7 +244,7 @@
 
   @media (min-width: 320px) and (max-width: 767px) {
     width: 90%;
-    top: 5rem;
+    top: 2rem;
     left: 5%;
   }
 }
@@ -447,6 +448,8 @@ div.entry-content>div:nth-child(8) {
     top: 120rem;        /*    2048px;   */
     height: 73.5rem;
     background-size: auto;
+    background-image: url();
+    background-color: var(--body-bg-color);
   }
 
 }
