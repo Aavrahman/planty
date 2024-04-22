@@ -12,7 +12,7 @@
 
     background-color: var(--commander-bg-title-color);
 
-    @media (min-width: 320px) and (max-width: 768.99px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         height: 173rem;
     }
 }
@@ -38,17 +38,15 @@ hr {
 
 /* --- --- Séparateurs de section <hr> --- --- */
 .wp-block-separator {
-    left: 20.27%;
-    /* 292px;   */
-    width: 59.72%;
-    /* 860px; */
+    left: 20.27%;     /* 292px;   */
+    width: 59.72%;    /* 860px; */
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 782px) and (max-width: 1024px) {
         left: 5%;
         width: 89%;
     }
 
-    @media (min-width: 320px) and (max-width: 768.99px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         left: 5%;
         width: 89%;
     }
@@ -58,11 +56,11 @@ hr {
 .wp-block-separator:nth-of-type(1) {
     top: 184px;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 782px) and (max-width: 1024px) {
         top: 150px;
     }
 
-    @media (min-width: 320px) and (max-width: 768.99px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         top: 130px;
     }
 }
@@ -81,12 +79,12 @@ hr {
     font-weight: 700;
     line-height: normal;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 782px) and (max-width: 1024px) {
         top: 200px;
         left: 5%;
     }
 
-    @media (min-width: 320px) and (max-width: 768.99px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         top: 180px;
         font-size: var(--mobile-h2-font-size);
     }
@@ -96,19 +94,20 @@ hr {
 /* --- --- --- --- --- --- LES CARTES --- --- --- --- --- --- */
 /* --- --- Le conteneur de la section 'Cartes' --- --- */
 
-.wp-container-core-columns-is-layout-1 {
+#post-61 .wp-container-core-columns-is-layout-1 {
     position: absolute;
     top: 299px;
     left: 20.27%;     /* 292px;   */
     width: 59.72%;     /* 860px; */
     height: 199px;
+    background-color: var(--commander-bg-title-color);
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 782px) and (max-width: 1024px) {
         left: 5%;
         width: 90%;
     }
 
-    @media (min-width: 320px) and (max-width: 768.99px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         top: 240px;
         left: 2%;
         width: 96%;
@@ -120,7 +119,7 @@ hr {
     width: 193.21px;
     height: 199px;
 
-    @media (min-width: 320px) and (max-width: 768.99px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         height: 24%;
         display: var(--display-flex);
         flex-direction: var(--flex-vertical);
@@ -128,21 +127,21 @@ hr {
     }
 }
 
-.wp-container-core-columns-is-layout-1 .wp-block-column .image-produit {
-    position: relative;
-    width: 100%;
-    /* 193.6px; */
-    height: 128.97px;
-    /* 100%; */
+#post-61 .wp-container-core-columns-is-layout-1 .wp-block-column .image-produit {           /*
+    position: relative;         */
+    width: 100%;            /* 193.6px; */
+    height: 128.97px;       /* 100%; */
     margin-left: 0;
     margin-right: 0;
+    background-size: 100%;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 782px) and (max-width: 1024px) {
         margin-top: 0;
         margin-bottom: 1rem;
+        background-repeat: no-repeat;
     }
 
-    @media (min-width: 320px) and (max-width: 768.99px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         margin: 2%;
         width: 96%;
         height: 100%;
@@ -153,12 +152,11 @@ hr {
 .wp-container-core-columns-is-layout-1 .wp-block-column .image-produit img {
     position: absolute;
     top: 0px;
-    width: 100%;
-    /* 192.533px;   */
+    width: 100%;    /* 192.533px;   */
     height: 100%;
     margin: 0;
 
-    @media (min-width: 320px) and (max-width: 768.99px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         width: 96%;
         height: 94%;
     }
@@ -180,7 +178,7 @@ hr {
     font-size: 20px;
     z-index: 5;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 782px) and (max-width: 1024px) {
         font-size: var(--tablet-h2-font-size);
         font-weight: 700;
     }
@@ -198,7 +196,7 @@ hr {
     display: var(--display-flex);
     justify-content: var(--justify-between);
 
-    @media (min-width: 320px) and (max-width: 767.99px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         position: relative;
         width: 96%;
         left: 2%;
@@ -207,16 +205,15 @@ hr {
 
 /* --- --- --- zéro, plus, moins : le cadre --- --- --- */
 .choix-cadre {
-    width: 82px;
-    /* 40%; */
+    width: 82px;    /* 40%; */
     height: 56px;
     display: var(--display-flex);
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 782px) and (max-width: 1024px) {
         width: 40%;
     }
 
-    @media (min-width: 320px) and (max-width: 767.99px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         width: 45%;
     }
 }
@@ -235,7 +232,7 @@ hr {
 
     border-radius: 5px 0 0 5px;
 
-    @media (min-width: 320px) and (max-width: 767.99px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         width: 55%;
     }
 }
@@ -265,7 +262,7 @@ hr {
 
     border-radius: 0 5px 5px 0;
 
-    @media (min-width: 320px) and (max-width: 767.99px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         width: 45%;
     }
 }
@@ -301,11 +298,11 @@ hr {
     border-radius: 5px;
     background: var(--cta-button-color);
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 782px) and (max-width: 1024px) {
         width: 55%;
     }
 
-    @media (min-width: 320px) and (max-width: 768.99px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         width: 50%;
     }
 }
@@ -326,7 +323,7 @@ hr {
 .wp-block-separator:nth-of-type(2) {
     top: 538px;
 
-    @media (min-width: 320px) and (max-width: 768.99px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         top: 1305px;
     }
 }
@@ -348,12 +345,12 @@ hr {
     width: 860px;
     height: 548px;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 782px) and (max-width: 1024px) {
         left: 5%;
         width: 89%;
     }
 
-    @media (min-width: 320px) and (max-width: 768.99px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         top: 1365px;
         left: 4%;
         width: 92%;
@@ -374,7 +371,7 @@ hr {
     justify-content: var(--justify-between);
     height: 100%;
 
-    @media (min-width: 320px) and (max-width: 768.99px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         position: absolute;
         left: 0%;
         width: 100%;
@@ -390,12 +387,12 @@ hr {
     display: block;
     width: 383px;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 782px) and (max-width: 1024px) {
         left: 0;
         width: 44.5%;
     }
 
-    @media (min-width: 320px) and (max-width: 768.99px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         width: 100%;
         height: 100%;
     }
@@ -406,11 +403,11 @@ hr {
     height: 449px;
     border-left: 1px solid var(--body-bg-color);
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 782px) and (max-width: 1024px) {
         border-left: 3px solid var(--body-bg-color);
     }
 
-    @media (min-width: 320px) and (max-width: 768.99px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         position: absolute;
         top: 495px;
         width: 100%;
@@ -472,14 +469,13 @@ hr {
 }
 
 /* --- --- --- --- --- --- Le bouton submit --- --- --- --- --- --- */
-#wpcf7-f462-p61-o1 .wpcf7-form p:nth-of-type(1) input[value="Commander"] {
+#post-61 #wpcf7-f462-p61-o1 .wpcf7-form p:nth-of-type(1) input[value="Commander"] {
     position: absolute;
     bottom: 0px;
-    left: 38.5%;
-    /* left: 331px;    */
+    margin-left: 38.5%;
 
-    @media (min-width: 320px) and (max-width: 768.99px) {
-        left: 23%;
+    @media (min-width: 320px) and (max-width: 781.99px) {
+        margin-left: 30%;
     }
 }
 

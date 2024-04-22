@@ -66,7 +66,6 @@ add_shortcode('titre-et-paragraphe-1', 'accueil_bloc2_developpement');
 /** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
 
 /** ** bloc présentation produits - image et titre ** ** **/
-
 function accueil_carte_produit($atts)
 {
     $atts = shortcode_atts(

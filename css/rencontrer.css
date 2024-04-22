@@ -82,6 +82,7 @@
   top: 16.188rem; /* 259px; */
   left: 24.125rem; /* 386px; */
   width: 46.44%; /* 41.81rem; 669px; */
+  text-align: center;
   
   @media (min-width: 768px) and (max-width: 1024px) {
     top: 12.2rem;
@@ -101,7 +102,7 @@
 .wp-block-columns:nth-child(4) {
   position: relative;
   top: 21rem; /* 336px; */
-  background-image: url('http://planty.local/wp-content/uploads/2024/04/svg3.png');
+  background-image: url('http://colorsandfonts.local/wp-content/uploads/2024/04/svg3-1.png');
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -163,15 +164,16 @@
   width: 56.6%; /* 50.875rem;    /* 814px; */
   height: 15.81rem; /* 253px; */
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 782px) and (max-width: 1024px) {
     top: 12.5rem;
     left: 10%;
     width: 80%;
   }
   
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 781.99px) {
     top: 4.5rem;
-    left: 20%;
+    left: 40%;
+    width: 25%;
     height: 40.5rem;
   }
 }
@@ -179,11 +181,18 @@
 /* --- Les 3 blocs des membres du staff --- */
 .wp-block-columns:nth-child(4) .wp-block-column .wp-block-columns .wp-block-column:nth-child(1) {
   justify-content: var(--justify-between);
+  @media (min-width: 320px) and (max-width: 781.99px) {
+      justify-content: var(--justify-around);
+    }
 }
 
 .wp-block-columns:nth-child(4) .wp-block-column .wp-block-columns .wp-block-column {
   display: var(--display-flex);
   justify-content: var(--justify-around);
+
+  @media (min-width: 320px) and (max-width: 781.99px) {
+    display: block;
+  }
 }
 
 .wp-block-columns:nth-child(4) .wp-block-column .wp-block-columns .wp-block-column:nth-child(3) {
@@ -299,13 +308,15 @@
 /* -- La balise p -- */
 #wpcf7-f76-p79-o1 form p { 
   text-align: left;
+  width: 100%;
+  display: var(--display-flex);
+  justify-content: var(--justify-around);
 }
 
 #wpcf7-f76-p79-o1 form p * {
   @media (min-width: 320px) and (max-width: 767.99px) {
     display: block;
     width: 98%;
-    margin-left: 1%;
   }
 }
 

@@ -73,11 +73,11 @@ body {
 body, #wrapper, #header, #footer, #container, main, article, .entry-content {
     width: 90rem;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 782px) and (max-width: 1024px) {
         max-width: 100%;
     }
 
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 7781.99px) {
         max-width: 100%;
 
     }
@@ -96,11 +96,11 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
     justify-content: var(--justify-between);
     background-color: var(--body-bg-color);
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 782px) and (max-width: 1024px) {
         height: 3.75rem;                            /* 60px; */
     }
 
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         height: 3.125rem;
     }
 }
@@ -113,35 +113,36 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
     justify-content: var(--justify-around);
     align-items: var(--align-center);
 
-    @media (min-width: 768px) and (max-width: 1024px) {
-        width: 17.188rem;                           /* 201px; 19.09%; /* 37 + 201 +37 = 275px; */
+    @media (min-width: 782px) and (max-width: 1024px) {
+        width: 26.9% /* 17.188rem;        /* 201px; 19.09%; /* 37 + 201 +37 = 275px; */
     }
 
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         width: 30%;
-        width: 12.6rem;
+        width: 25.78%;     /* 12.6rem;     */
     }
 }
 
-#logo {
-    width: 12.563rem;                               /*  201px; */
+#logo, #logo a img {
+    width: 100%;            /* 201rem;     */
     height: 1.188rem;                               /* 19px; */
 }
 
 /* --- --- --- --- --- M E N U --- --- --- --- --- */
 #menu {                                             /* nav tag */
-    width: 32.25rem;         /* 516 px : (nous rencontrer:114 + 60 + Admin:46 + 60 + Commander:236) - 35,83% */
-    @media (min-width: 768px) and (max-width: 1024px) {
+    width: 32.25rem;  /* 516 px : (nous rencontrer:114 + 60 + Admin:46 + 60 + Commander:236) - 35,83% */
+    @media (min-width: 782px) and (max-width: 1024px) {
         width: 28rem;                               /* 366.89px; */
     }
 
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         width: 27%;
         cursor: pointer;
     }
 }
 
 #menu-icon {
+    width: 100%;
     display: var(--display-flex);
     justify-content: var(--justify-around);
 }
@@ -149,7 +150,7 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
 #hamburger {
     display: none;                                  /* hide menu on desktop screens */
 
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         width: 2.5rem;                            /* 50px; */
         height: 2.10rem;
         margin: 0.5rem;
@@ -173,11 +174,11 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
 .menu-visiteur-container {                                      /* menu div container */
     width: 100%;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 782px) and (max-width: 1024px) {
         height: 3.75rem;                                          /* hide menu on mobile screens */
     }
 
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         display: none;                                          /* hide menu on mobile screens */
     }
 }
@@ -186,14 +187,14 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
     position: relative;
     margin-right: 0px;
 
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 781px) {
         display: none;                                          /* hide menu on mobile screens */
     }
 }
 
 #menu:hover .menu-header_menu-container,
 #menu:hover .menu-visiteur-container {                          /* menu div container */
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         position: relative;
         z-index: 10;
         display: var(--display-flex);
@@ -209,11 +210,11 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
 
     width: 100%;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 782px) and (max-width: 1024px) {
         height: 3.75rem;
     }
 
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         display: var(--display-flex);
         flex-direction: var(--flex-vertical);                   /* vertical display for list */
         background-color: var(--body-bg-color);
@@ -228,20 +229,20 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
 
     height: 3.125rem;                                           /* 50px; */
 
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         width: 100%;
     }
 }
 
 #menu-header_menu .menu-item,
 #menu-visiteur .menu-item {
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         border-top: solid 1px var(--menu-commander-color);
     }
 }
 
 #menu-visiteur .menu-item-213 {
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         border-top: solid 0px white;                  /* rendre invisible le trait de séparation de 50%width */
     }
 }
@@ -254,7 +255,7 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
     display: var(--display-flex);
     justify-content: var(--justify-around);
 
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         width: 100%;
     }
 }
@@ -275,12 +276,12 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
 
     justify-content: var(--justify-around);
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 782px) and (max-width: 1024px) {
         width: 45.73%%;
         height: 3.75rem;                                    /* 60px; */
     }
 
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         width: 100%;
         height: 3.125rem;                                   /* 50px; */
     }
@@ -308,36 +309,48 @@ article#post-99,
 .entry-content {            
     height: 173.125rem;                                     /* 2770px; */
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 782px) and (max-width: 1024px) {
         height: 135.688rem;             /* 2171px;  */
     }
 
-    @media (min-width: 320px) and (max-width: 767.98px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         height: 190.5rem;                                   /* 3048px; */
     }
 }
 
-/* --- --- --- --- --- --- --- F O O T E R --- --- --- --- --- --- --- */
-/* --- --- --- --- --- C O M M O N - C L A S S E S --- --- --- --- --- */
+/* --- --- --- --- --- T A G S - C O M M O N - C L A S S E S --- --- --- --- --- */
 
 h1 {
     position: absolute;
     font-size: var(--h1-font-size);
-    text-align: center;
+    width: 100%;
     font-style: var(--parag-font-style);
     font-weight: 800;
     line-height: normal;
     text-transform: uppercase;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 782px) and (max-width: 1024px) {
         font-size: var(--tablet-h1-font-size);
     }
 
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 781.99px) {
         font-size: var(--mobile-h1-font-size);
     }
 }
 
+h2 {
+    font-size: var(--h2-font-size);
+    font-style: normal;
+    line-height: normal;
+}
+
+p {
+    color: var(--text-color);
+    font-size: var(--parag-font-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 /* --- --- --- --- --- --- --- F O O T E R --- --- --- --- --- --- --- */
 #footer {
@@ -353,27 +366,7 @@ h1 {
     align-items: var(--align-center);
 }
 
-/* --- --- --- --- --- --- --- -- C T A --- --- --- --- --- --- --- --- *//*
-.button-box {
-    position: absolute;
-    top: 133rem;
-
-    width: 90rem;
-
-    display: var(--display-flex);
-    justify-content: var(--justify-around);
-
-    @media (min-width: 768px) and (max-width: 1024px) {
-        width: 100%;
-        top: 100rem;
-    }
-
-    @media (min-width: 320px) and (max-width: 767px) {
-        width: 100%;
-        top: 121rem;
-    }
-}
-*/
+/* --- --- --- --- --- --- --- -- C T A --- --- --- --- --- --- --- --- */
 .button-text:hover {
     background-color: var(--menu-commander-hover-color);
 }
@@ -407,4 +400,9 @@ input[type="submit"] {
     font-style: var(--parag-font-style);
     font-weight: var(--parag-font-weight);
     line-height: var(--cta-line-height);
+}
+
+.button-text:hover,
+.wpcf7-submit:hover {
+    background-color: var(--menu-commander-hover-color);
 }
