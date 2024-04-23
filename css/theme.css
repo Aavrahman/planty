@@ -112,7 +112,7 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
     display: var(--display-flex);
     justify-content: var(--justify-around);
     align-items: var(--align-center);
-
+    margin-left: 2.56%;    /* 37px */
     @media (min-width: 782px) and (max-width: 1024px) {
         width: 26.9% /* 17.188rem;        /* 201px; 19.09%; /* 37 + 201 +37 = 275px; */
     }
@@ -328,6 +328,7 @@ h1 {
     font-weight: 800;
     line-height: normal;
     text-transform: uppercase;
+    text-align: center;
 
     @media (min-width: 782px) and (max-width: 1024px) {
         font-size: var(--tablet-h1-font-size);
