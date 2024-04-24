@@ -18,6 +18,9 @@ function theme_enqueue_styles()
     wp_enqueue_style('rencontrer-style', get_stylesheet_directory_uri() . '/css/rencontrer.css', array(),
         filemtime(get_stylesheet_directory() . '/css/rencontrer.css'));
 
+    /** commander.css */
+    wp_enqueue_style('commander-style', get_stylesheet_directory_uri() . '/css/commander.css', array(), filemtime(get_stylesheet_directory() . '/css/commander.css'));
+
 }
 
 
