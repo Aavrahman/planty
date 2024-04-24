@@ -53,7 +53,7 @@
     /* Vars intended to change the display in mobile devices */
     --mobile-card-font-size: 2rem;                  /* 32 px replace 48 */
     --mobile-h1-font-size: 1.8rem; /* 1.625rem;     /* 26 replace 38 px */
-    --mobile-h2-font-size: 1.25rem;                 /* 20 replace 30 px */
+    --mobile-h2-font-size: 1.6rem;                 /* 25.6 px */
     --mobile-cta-font-size: 0.625rem;               /* 10 replace 15 px */
     --mobile-menu-n-card-font-size: 0.75rem;        /* 12 replace 16 px */
     --mobile-parag-font-size: 0.813rem;             /* 13 replace 20 px */
@@ -95,10 +95,6 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
     display: var(--display-flex);
     justify-content: var(--justify-between);
     background-color: var(--body-bg-color);
-
-    @media (min-width: 782px) and (max-width: 1024px) {
-        height: 3.75rem;                            /* 60px; */
-    }
 
     @media (min-width: 320px) and (max-width: 781.99px) {
         height: 3.125rem;
@@ -174,10 +170,6 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
 .menu-visiteur-container {                                      /* menu div container */
     width: 100%;
 
-    @media (min-width: 782px) and (max-width: 1024px) {
-        height: 3.75rem;                                          /* hide menu on mobile screens */
-    }
-
     @media (min-width: 320px) and (max-width: 781.99px) {
         display: none;                                          /* hide menu on mobile screens */
     }
@@ -211,7 +203,7 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
     width: 100%;
 
     @media (min-width: 782px) and (max-width: 1024px) {
-        height: 3.75rem;
+        height: 5rem;
     }
 
     @media (min-width: 320px) and (max-width: 781.99px) {
@@ -227,7 +219,7 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
     justify-content: var(--justify-between);
     align-items: var(--align-center);
 
-    height: 3.125rem;                                           /* 50px; */
+    height: 5rem;                                           /* 50px; */
 
     @media (min-width: 320px) and (max-width: 781.99px) {
         width: 100%;
@@ -277,8 +269,7 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
     justify-content: var(--justify-around);
 
     @media (min-width: 782px) and (max-width: 1024px) {
-        width: 45.73%%;
-        height: 3.75rem;                                    /* 60px; */
+        width: 45.73%;
     }
 
     @media (min-width: 320px) and (max-width: 781.99px) {
