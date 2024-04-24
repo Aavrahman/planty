@@ -4,146 +4,165 @@
 
 .entry-content h1 {
   top: 11.563rem;  /* 185px; */
-  color: var(--commander-bg-title-color);
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    top: 6.5rem;              /* 140px  */
-  }
+  color: var(--commander-bg-title-color);  
+}
 
-  @media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 782px) and (max-width: 1024px) {
+  .entry-content h1 {
+    top: 6.5rem;      /* 104px  */
+  }
+}
+  
+@media (min-width: 320px) and (max-width: 781.99px) {
+ .entry-content h1 {
     top: 5rem;
   }
 }
 
-/* --- CONTENEUR EXTERIEUR DES GRAPHIQUES --- */  /*
-.entry-content .wp-block-columns:nth-child(2) {
-*/
+/* --- CONTENEUR EXTERIEUR DES GRAPHIQUES --- */
 .entry-content .wp-container-core-columns-is-layout-1 {
-
   position: absolute;
   top: 10.188rem; /* 163px */
-  left: 0px;;
   width: 100%; /* 1440px; */
   height: 59.375rem;   /* 950px; */
   fill: #E3D9D0;
+}
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 782px) and (max-width: 1024px) {
+  .entry-content .wp-container-core-columns-is-layout-1 {
     top: 6.25rem;
-    width: 100%;
-    height: 40rem;      /* 883px; */
+    height: 40rem;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 767px) {
-    width: 100%;
-    height: 27rem;
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .entry-content .wp-container-core-columns-is-layout-1 {
     top: 3rem;
+    height: 27rem;
   }
 }
 
-/* --- CONTENEUR INTERIEUR DES GRAPHIQUES --- */
-#post-99 .entry-content .wp-container-core-columns-is-layout-1 .wp-block-column {
-  @media (min-width: 768px) and (max-width: 1024px) {
-    flex-direction: row;
-  }
-}
-
+/* --- --- CONTENEUR INTERIEUR DES GRAPHIQUES --- --- */
 
 .entry-content .wp-block-columns:nth-child(2) .wp-block-column {
   position: relative;
   height: 59.375rem;                /* 950px; */
   display: var(--display-flex);
+}
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 782px) and (max-width: 1024px) {
+  .entry-content .wp-block-columns:nth-child(2) .wp-block-column {
     height: 40rem;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .entry-content .wp-block-columns:nth-child(2) .wp-block-column {
     height: 28rem;
   }
-
 }
 
 /* --- shortcode Logo Canette --- */
 .titre-et-image {
-  width: 93.33%;                                 /* 1344px; */
-  height: 59.375rem;                                /* 950px; */
   position: absolute;
-  left: 4.02%;        /*   58px;    */
+  left: 4.02%;          /* 58px;  */
+  width: 93.33%;        /* 1344px; */
+  height: 59.375rem;    /* 950px; */
+}
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 782px) and (max-width: 1024px) {
+  .titre-et-image {
     width: 100%;
     height: 100%;
     left: 0px;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .titre-et-image {
     width: 100%;
     height: 30rem;
     left: 0rem;
   }
 }
 
+/* --- */
 .titre-et-image img {
   position: absolute;
   z-index: 5;
+}
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 782px) and (max-width: 1024px) {
+  .titre-et-image img {
     width: 100%;
     left: 0px;
-    height: 40rem;                  /* 883px; */
+    height: 40rem;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 767.99px) {
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .titre-et-image img {
     width: 100%;
     height: 15rem;
     top: 6rem;
   }
 }
 
-/* --- Les 2 blocs d'images des 2 rameaux --- */
+/* --- Les 2 blocs 'figure' conteneurs d'images de rameaux --- */
 .entry-content .wp-block-columns:nth-child(2) .wp-block-column figure {
   display: inline-block;
-  width: 50%;     /* 720px; */
   position: relative;
-  top: 19rem;
+  top: 0rem;
+  width: 50%;    /* 720px; */
+  height: 100%;
+}
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 782px) and (max-width: 1024px) {
+  .entry-content .wp-block-columns:nth-child(2) .wp-block-column figure {
     width: 50%;
-    top: 0px;
+    height: 100%;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .entry-content .wp-block-columns:nth-child(2) .wp-block-column figure {
     top: 11rem;
     left:25%;
     width: 25%;
     height: 100px;
   }
-
 }
 
-.wp-image-168 {
-  position: relative;
-  left: 10px;
-}
-
-.wp-image-169 {
+/* --- Les images --- */
+#post-99 .wp-block-image img,
+#post-99 .wp-image-599, .wp-image-601 {
   position: absolute;
+  top: 18.75rem;
+  width: 21.875rem;         /* 350px     */
+}
+
+@media (min-width: 782px) and (max-width: 1024px) {
+  #post-99 .wp-block-image img, #post-99 .wp-image-599, .wp-image-601 {
+    top: 13rem;
+    height: 40%;
+    width: 14rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  #post-99 .wp-block-image img, #post-99 .wp-image-599, .wp-image-601 {
+    top: auto;
+    height: 100%;
+  }
+}
+
+.wp-image-599 {
   right: 0px;
 }
 
-#post-99 .wp-block-image img,
-#post-99 .wp-image-168, .wp-image-169 {
-  width: 21.875rem;         /* 350px     */
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    width: 15.356rem;    /* 245.7px  */
-    top: 10rem;
-  }
-
-  @media (min-width: 320px) and (max-width: 767.98px) {
-    top: auto; /* 8rem;  */
-    height: 100%;
-  }
+.wp-image-601 {
+  position: relative;
+  left: 10px;
 }
 
 /* --- --- --- --- --- - DEUXIEME SECTION : Titre et paragraphe - --- --- --- --- --- */
@@ -151,44 +170,49 @@
 .entry-content .wp-block-columns:nth-child(3) {
   position: absolute;
   top: 58rem;               /*  928px */
+  width: 100%;
   z-index: 10;
+}
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 782px) and (max-width: 1024px) {
+  .entry-content .wp-block-columns:nth-child(3) {
     top: 38rem;
-    width: 100%;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 767.98px) {
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .entry-content .wp-block-columns:nth-child(3) {
     top: 24rem;
-    width: 100%;
     height: 285px;
   }
 }
 
-.entry-content .wp-block-columns:nth-child(3) .wp-block-column {
-  @media (min-width: 320px) and (max-width: 767.98px) {
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .entry-content .wp-block-columns:nth-child(3) .wp-block-column {
     height: 285px;
   }
 }
 
-/* --- SOUS - SECTION PRESENTATION --- */
-.entry-content .wp-block-columns:nth-child(3) #accueil-presentation {
-  min-width: 90rem;                         /* 1440 */
-  height: 25.938rem;          /*415px;      */
+/* --- SOUS - SECTION PRESENTATION (.entry-content .wp-block-columns:nth-child(3) #accueil-presentation) --- */
+#accueil-presentation {
+  width: 100%;           /* 1440 */
+  height: 25.938rem;     /*415px; */
   background-image: url('http://colorsandfonts.local/wp-content/uploads/2024/04/svg-1-1.png');
   background-size: 100%;
   background-repeat: no-repeat;
   object-fit: cover;
+}
 
-
-  @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 782px) and (max-width: 1024px) {
+  #accueil-presentation {
     position: inherit;
-    top: 0rem;
     min-width: 48rem;
     height: 17rem;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 781.99px) {
+  #accueil-presentation {
     min-width: 20rem;
     height: 285px;
     background-image: url();
@@ -196,50 +220,48 @@
   }
 }
 
-.accueil-presentation-h2 {
+/* --- */
+#accueil-presentation h2 {
+  position: relative;
+  top: 8.125rem;  /* 130px; */
+
   color: var(--commander-bg-title-color);
   text-align: center;
-  font-size: var(--h2-font-size);
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
+}
 
-  position: relative;
-  top: 8.125rem;                                /* 130px; */
-
-  @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 782px) and (max-width: 1024px) {
+  #accueil-presentation h2 {
     top: 4.7rem;
-    width: 100%;;
-  }
-
-  @media (min-width: 320px) and (max-width: 767px) {
-    top: 1.5rem;
+    width: 100%;
   }
 }
 
-.accueil-presentation-p {
+@media (min-width: 320px) and (max-width: 781.99px) {
+  #accueil-presentation h2 {
+    top: 2.5rem;
+  }
+}
+
+#accueil-presentation p {
   position: relative;
   top: 12.313rem;                         /*  213px;  */
   left: 32.5%; /*  472px; */
-
   width: 34.5%; /* 497px; */
-  
-  color: #000;
-  text-align: center;
-  font-size: 1.25rem; /* 20px; */
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+}
 
-  @media (min-width: 768px) and (max-width: 1024px) {
-    width: 75%;
-    top: 6.5rem;;
-    left: 22%;
+@media (min-width: 782px) and (max-width: 1024px) {
+  #accueil-presentation p {
+    width: 50%;
+    top: 6.5rem;
+    left: 22.5%;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 781.99px) {
+  #accueil-presentation p {
     width: 90%;
-    top: 2rem;
+    top: 5rem;
     left: 5%;
   }
 }
@@ -250,23 +272,21 @@
 .entry-content h2:nth-child(4) {
   position: absolute;
   top: 87.563rem;                             /*1401px; */
-  
-  width: 90rem;
+
   color: #D2776A;
   text-align: center;
-  font-size: 1.875rem; /* 30px; */
-  font-style: normal;
   font-weight: 800;
-  line-height: normal;
   text-transform: uppercase;
+}
 
-  @media (min-width: 768px) and (max-width: 1024px) {
-    width: 100%;
+@media (min-width: 782px) and (max-width: 1024px) {
+  .entry-content h2:nth-child(4) {
     top: 60rem;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 767px) {
-    width: 100%;
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .entry-content h2:nth-child(4) {
     top: 46rem;
   }
 }
@@ -275,46 +295,43 @@
 .entry-content p:nth-child(5) {
   position: absolute;
   top: 90.44rem;                      /* 1444px;  */
+  width: 100%;
+}
 
-  width: 90rem;
-  color: black;
-  text-align: center;
-  font-size: 1.25rem; /* 20px; */
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    max-width: 100%;
+@media (min-width: 782px) and (max-width: 1024px) {
+  .entry-content p:nth-child(5) {
     top:63rem;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 767px) {
-    max-width: 100%;
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .entry-content p:nth-child(5) {
     top: 49rem;
   }
 }
 
 /* --- --- --- SOUS  SECTION PRODUIT : THE CARDS --- --- --- */
 
-/* -- Outer column container -- */  /*
-.entry-content .wp-block-columns:nth-child(6) { */
+/* -- Outer column container -- */
 .wp-container-core-columns-is-layout-3 {
   position: absolute;
-  top: 94.75rem;                      /* 1516px;  */
+  top: 94.75rem;          /* 1516px;  */
   left: 20.27%;
-
   width: 59.72%;
-  height: 37.875rem;                  /* 606px : (263 * 2) + 80 ( 40 * 2) */
+  height: 37.875rem;      /* 606px : (263 * 2) + 80 ( 40 * 2) */
+}
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 782px) and (max-width: 1024px) {
+  .wp-container-core-columns-is-layout-3 {
     top: 66rem;
     left: 0rem;
-    height: 30rem;
     width: 100%;
+    height: 30rem;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .wp-container-core-columns-is-layout-3 {
     top: 55rem;
     left: 0rem;
     width: 100%;
@@ -324,98 +341,97 @@
 
 /* -- Inner column container -- */
 .entry-content .wp-block-columns:nth-child(6) .wp-block-column {
-  width: 58.75%;                   /* 846px;    /* (393 * 2) + 60 (15 * 2) */
-
   display: var(--display-flex);
   flex-wrap: wrap;
+}
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 782px) and (max-width: 1024px) {
+  .entry-content .wp-block-columns:nth-child(6) .wp-block-column {
     width: 100%;
+    justify-content: var(--justify-around);
   }
+}
 
-  @media (min-width: 320px) and (max-width: 767px) {
-    left: 0rem;
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .entry-content .wp-block-columns:nth-child(6) .wp-block-column {
     width: 100%;
     margin: auto;
   }
 }
 
-/* -- cards --  */
+/* --- cards ---  */
 .image-produit {
   width: 24.563rem;             /* 393px; */
   height: 16.375rem;            /* 262px; */
-
   margin-left: 0.938rem; /*15px; */
   margin-right: 0.938rem; /* 15px; */
 
   display: var(--display-flex);
   justify-content: var(--justify-around);
   align-items: var(--align-center);
+}
 
-  @media (min-width: 768px) and (max-width: 1024px) {
-    width: 46%; /*  320px; */
-    height: 13.75rem; /*  220px;  */
-    margin: 0.75rem; /* 12px; */
+@media (min-width: 782px) and (max-width: 1024px) {
+  .image-produit {
+    width: 46%;
+    height: 13.75rem;
+    margin: 0.75rem;
     background-size: cover;
-  }
-
-  @media (min-width: 320px) and (max-width: 767.98px) {
-    width: 100%;
-    height: 12.5rem; /* 200px; */
-    background-size: cover;
-    margin: 0.75rem; /*  12px; */
   }
 }
 
-/* -- titles --  */
+@media (min-width: 320px) and (max-width: 781.98px) {
+  .image-produit {
+    width: 100%;
+    height: 12.5rem;
+    background-size: cover;
+    margin: 0.75rem;
+  }
+}
+
+/* --- Noms produits ---  */
 .nom-produit {
   color: var(--body-bg-color);
   text-align: center;
   font-family: Syne;
   font-size: 48px;
   font-style: normal;
-  font-weight: var(--font-weight-1);                /*  800;  */
   line-height: normal;
+  font-weight: var(--font-weight-1);    /*  800;  */
+  text-transform: uppercase;
+}
+
+@media (min-width: 782px) and (max-width: 1024px) {
+  .entry-content .wp-block-columns:nth-child(6) .wp-block-column .image-produit .nom-produit {
+    font-size: var(--tablet-card-font-size);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .entry-content .wp-block-columns:nth-child(6) .wp-block-column .image-produit .nom-produit {
+    font-size: var(--mobile-card-font-size);
+  }
 }
 
 /* --- --- --- SOUS  SECTION PRODUIT : THE CTA - --- --- --- */
-
 .button-box {
   position: absolute;
   top: 133rem;
-
-  width: 90rem;
+  width: 100%;
 
   display: var(--display-flex);
   justify-content: var(--justify-around);
+}
 
-  @media (min-width: 768px) and (max-width: 1024px) {
-    width: 100%;
+@media (min-width: 782px) and (max-width: 1024px) {
+  .button-box {
     top: 100rem;
-  }
-
-  @media (min-width: 320px) and (max-width: 767px) {
-    width: 100%;
-    top: 113rem;
   }
 }
 
-
-.entry-content .wp-block-columns:nth-child(6) .wp-block-column .image-produit .nom-produit {
-  font-size: var(--card-font-size);
-  color: var(--body-bg-color);
-  text-align: center;
-  font-style: var(--parag-font-style);
-  font-weight: 800;
-  line-height: normal;
-  text-transform: uppercase;
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-      font-size: var(--mobile-card-font-size);
-  }
-
-  @media (min-width: 320px) and (max-width: 767px) {
-    font-size: var(--mobile-card-font-size);
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .button-box {
+    top: 113rem;
   }
 }
 
@@ -425,36 +441,37 @@
 div.entry-content>div:nth-child(8) {
   position: absolute;
   top: 138.25rem;           /* 2212px;  */
-
-  width: var(--full-width);
+  width: 100%;
   height: 39.875rem; /* 638px;  */
 
   background-image: url("http://planty.local/wp-content/uploads/2024/04/svg2.png");
   background-size: 100%;
   background-repeat: no-repeat;
   object-fit: cover;
+}
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 782px) and (max-width: 1024px) {
+  div.entry-content>div:nth-child(8) {
     top: 108.125rem;
     height: 31.25rem;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 767px) {
-    top: 120rem;        /*    2048px;   */
+@media (min-width: 320px) and (max-width: 781.99px) {
+  div.entry-content>div:nth-child(8) {
+    top: 120rem;
     height: 73.5rem;
     background-size: auto;
     background-image: url();
     background-color: var(--body-bg-color);
   }
-
 }
 
 /* -- bloc interieur : image des canettes -- */
 .image-canettes {
   position: absolute;
   bottom: 0;
-
-  width: var(--full-width);
+  width: 100%;
   height: 8.875rem;   /* 142px; */
   background-repeat: no-repeat;
 }
@@ -463,16 +480,18 @@ div.entry-content>div:nth-child(8) {
 .entry-content div:nth-child(9) {
   position: absolute;
   top: 146.563rem;
-  width: 90rem;
+  width: 100%;
+}
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 782px) and (max-width: 1024px) {
+  .entry-content div:nth-child(9) {
     top: 112rem;
-    width: 100%;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .entry-content div:nth-child(9) {
     top: 123rem;
-    width: 100%;
   }
 }
 
@@ -480,38 +499,37 @@ div.entry-content>div:nth-child(8) {
 .entry-content div:nth-child(9) .wp-block-column .wp-block-heading {
   color: var(--commander-bg-title-color);
   text-align: var(--parag-text-align);
-  font-size: var(--h2-font-size);
-  font-style: var(--parag-font-style);
   font-weight: 800;
-  line-height: normal;
   text-transform: uppercase;
 }
 
 /* --- --- --- BLOC DU FEEDBACK --- --- ---*/
 
 /* LE BLOC CONTENEUR */
-
-
 .entry-content div:nth-child(10) {
   position: absolute;
   top: 154.063rem;            /* 2465px;  */
   left: 8.25rem; /* 132px; */
   width: 73.188rem; /* 1171px; */
+}
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 782px) and (max-width: 1024px) {
+  .entry-content div:nth-child(10) {
     top: 118rem;
     width: 100%;
     left: 0rem;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 767.98px) {
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .entry-content div:nth-child(10) {
     width: 100%;
-    top: 133rem;        /* 2336px */
+    top: 133rem;
     left: 0rem;
   }
 }
 
-/* -- La boite -- */
+/* -- La boite de retour d'expérience -- */
 .feedback-box {
   display: var(--display-flex);
   justify-content: var(--justify-between);
@@ -521,7 +539,7 @@ div.entry-content>div:nth-child(8) {
 /* L'image */
 .feed-img {
   width: 7.893rem;    /* 126.28px;    */
-  height: 8.688;      /* 139px; */
+  height: 8.688rem;      /* 139px; */
 }
 
 /* La sous boite contenant le nom et le texte du commentaire */
@@ -547,15 +565,7 @@ div.entry-content>div:nth-child(8) {
 .feed-text {
   width: 196px;
 
-  color: var(--text-color);
   font-size: var(--menu-n-card-font-size);
-  font-style: var(--parag-font-style);
-  font-weight: 400;
   line-height: normal;
+  text-align: left;
 }
-
-/*
-* Must use the position property absolute, relative, fixed or sticky to use z-index and and also we can use 'top, right, bottom, left
-* Use z-index property
-* ? use the pseudoclass :before / :after
-*/

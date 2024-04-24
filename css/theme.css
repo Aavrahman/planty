@@ -340,6 +340,7 @@ h1 {
 }
 
 h2 {
+    width: 100%;
     font-size: var(--h2-font-size);
     font-style: normal;
     line-height: normal;
@@ -351,6 +352,7 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: center;
 }
 
 /* --- --- --- --- --- --- --- F O O T E R --- --- --- --- --- --- --- */

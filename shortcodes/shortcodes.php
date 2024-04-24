@@ -3,9 +3,9 @@
 /* --- --- --- --- --- --- --- P A G E - D' A C C U E I L --- --- --- --- --- --- --- */
 
 /** ** ** ** ** ** * bloc titre principal  ** ** ** ** ** **/
-function accueil_bloc_titre($atts)                   //* Affichage bloc superieur page  accueil_bloc_titre
+function accueil_bloc_titre($atts)          //* Affichage bloc superieur page  accueil_bloc_titre
 {
-    $atts = shortcode_atts(                          // Récupérer les attributs sasis sur le shortcode				
+    $atts = shortcode_atts(                 // Récupérer les attributs sasis sur le shortcode				
         array(
             'src' => ' ',
         ),
@@ -13,7 +13,7 @@ function accueil_bloc_titre($atts)                   //* Affichage bloc superieu
         'titre-et-image'
     );
 
-    ob_start();                                      //Sauvegarde en mémoire de données (vars et/ou txt) qui suivent
+    ob_start();                             // Sauvegarde en mémoire de données (vars et/ou txt) qui suivent
 
     if ($atts['src'] != "") {
 ?>
@@ -24,7 +24,7 @@ function accueil_bloc_titre($atts)                   //* Affichage bloc superieu
     <?php
     }
 
-    $output = ob_get_contents();                     // Récupération des données sauvegardées dans la var $output	
+    $output = ob_get_contents();            // Récupération des données sauvegardées dans la var $output	
     ob_end_clean();
     return $output;
 }

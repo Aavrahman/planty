@@ -2,9 +2,7 @@
 <html <?php language_attributes(); ?> <?php blankslate_schema_type(); ?>>
 
 <head>
-    <!--
-    <meta charset="<?php bloginfo('charset'); ?>">  -->
-    <title> Copie de Planty </title>
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head(); ?>
 </head>
@@ -21,15 +19,10 @@
         <div id="branding">
             <?php
             echo '<div id="logo">
-                                <a href="' . esc_url(home_url('/')) . '" title="' . esc_attr(get_bloginfo('name')) . '" rel="home" itemprop="url"> 
-                                    <img src="' . esc_url(get_theme_file_uri('images/logo_.png')) . '" alt="pas d\'image !" class="logo" />
-                                </a>
-                            </div>';
-            /*
-                echo ("<div id='slug'>");
-                echo ("<span class='the-slug'> energy drink </span>");
-                echo ("</div>");
-                */
+                    <a href="' . esc_url(home_url('/')) . '" title="' . esc_attr(get_bloginfo('name')) . '" rel="home" itemprop="url"> 
+                        <img src="' . esc_url(get_theme_file_uri('images/logo_.png')) . '" alt="pas d\'image !" class="logo" />
+                    </a>
+                </div>';
             ?>
         </div>
 
@@ -43,15 +36,13 @@
             </div>
 
             <?php
-          //      if (has_nav_menu('header_menu')) {
-                    wp_nav_menu(
-                        array(
-                            'theme_location' => 'Main Menu',
-                            'link_before' => '<span itemprop="name">',
-                            'link_after' => '</span>'
-                        )
-                    );
-         //       }
+                wp_nav_menu(
+                    array(
+                        'theme_location' => 'Main Menu',
+                        'link_before' => '<span itemprop="name">',
+                        'link_after' => '</span>'
+                    )
+                );
             ?>
         </nav>
     </header>
