@@ -40,7 +40,7 @@
 
     /* Vars values for tablet devices */
     --tablet-card-font-size: 2.5rem;                /* 32 px replace 48 */
-    --tablet-h1-font-size: 1.8rem;                  /* 1.625rem; */
+    --tablet-h1-font-size: 1.9rem;                  /* 1.625rem; */
     --tablet-h2-font-size: 1.25rem;                 /* 20 replace 30 px */
     --tablet-cta-font-size: 0.625rem;               /* 10 replace 15 px */
     --tablet-menu-n-card-font-size: 0.75rem;        /* 12 replace 16 px */
@@ -52,7 +52,7 @@
 
     /* Vars intended to change the display in mobile devices */
     --mobile-card-font-size: 2rem;                  /* 32 px replace 48 */
-    --mobile-h1-font-size: 1.3rem; /* 1.625rem;     /* 26 replace 38 px */
+    --mobile-h1-font-size: 1.8rem; /* 1.625rem;     /* 26 replace 38 px */
     --mobile-h2-font-size: 1.25rem;                 /* 20 replace 30 px */
     --mobile-cta-font-size: 0.625rem;               /* 10 replace 15 px */
     --mobile-menu-n-card-font-size: 0.75rem;        /* 12 replace 16 px */

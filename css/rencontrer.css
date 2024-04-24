@@ -1,0 +1,439 @@
+/* --- --- --- --- --- --- --- --- SECTION SUPERIEURE --- --- --- --- --- --- --- --- */
+
+/* --- LE TEMPLATE --- */
+.rencontrer {
+  position: absolute;
+  top: 5rem;
+  left: 0px;
+  height: 115.875rem; /* 1854px; */
+  background-color: var(--container-bg-color);
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media (min-width: 782px) and (max-width: 1024px) {
+  .rencontrer {
+    top: 3.5rem;
+  }
+}
+
+/* --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- */
+
+/* --- CONTENEUR DE LA ROSACE --- */
+.rencontrer .wp-block-image:nth-child(1) {
+  position: absolute;
+  top: 0px;
+  left: 0px;  
+  width: var(--full-width);
+  height: 100%;
+}
+
+@media (min-width: 782px) and (max-width: 1024px) {
+  .rencontrer .wp-block-image:nth-child(1) {
+    width: 100%;
+    height: 11.56rem;         /*  185px;  */
+  }
+}
+
+@media (min-width: 320px) and (max-width: 781.98px) {
+  .rencontrer .wp-block-image:nth-child(1) {
+    width: 0rem;
+    height: 0rem;
+    display: none;
+  }
+}
+
+/* --- .rencontrer .wp-block-image:nth-child(1) .wp-image-572 --- */
+.wp-image-572 {
+  position: relative;
+  top: 3.31rem;     /*  53px; */
+  left: 8.33%; /*  120px; */
+  width: 13.33%;    /* 192.43px;  */
+  height: 11.75rem;       /*    188px;    */
+  transform: rotate(70deg);
+}
+
+@media (min-width: 782px) and (max-width: 1024px) {
+  .wp-image-572 {
+    top: 2.75rem;     /*  44px;   */
+  }
+}
+
+/* --- LE rameau --- */
+.wp-block-image:nth-child(1) .wp-image-574 {
+  position: absolute;
+  bottom: 0px; /*    top: 2.688rem; /* 43px; */
+  left: 82.5%; /* 1188px; */
+  width: 13.26%; /*  191px; */
+  height: 13.69rem; /* 219px; */
+}
+
+@media (min-width: 782px) and (max-width: 1024px) {
+  .wp-block-image:nth-child(1) .wp-image-574 {
+    top: 9rem;
+    left: 32%;
+    width: 31%;
+    height: 8.75rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .wp-block-image:nth-child(1) .wp-image-574 {
+    font-size: var(--mobile-h1-font-size);
+    top: 2.5rem;
+    left: 0rem;
+    width: 6.02rem;
+    height: 4.75rem;
+  }
+}
+
+/* --- Le titre 'NOUS RENCONTRER' --- */
+.rencontrer h1 {
+  top: 11.625rem; /* 186px; */
+  color: var(--orange-h1-h2-color);
+}
+
+@media (min-width: 782px) and (max-width: 1024px) {
+  .rencontrer h1 {
+    font-size: var(--tablet-h1-font-size);
+    top: 7.5rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .rencontrer h1 {
+    top: 2rem;
+  }
+}
+
+/* --- Le PARAGRAPHE --- */
+.rencontrer > p:nth-child(3) {
+  position: absolute;
+  top: 16.188rem; /* 259px; */
+  left: 24.125rem; /* 386px; */
+  width: 46.44%; /* 41.81rem; 669px; */
+}
+
+@media (min-width: 782px) and (max-width: 1024px) {
+  .rencontrer>p:nth-child(3) {
+    top: 12.2rem;
+    left: 25%;
+    right: 17.5%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .rencontrer>p:nth-child(3) {
+    top: 7rem;
+    left: 0%;
+    width: 100%;
+  }
+}
+
+/* --- --- --- --- --- --- --- --- SECTION LE STAFF - --- --- --- --- --- --- --- --- */
+
+/* --- Le BACKGROUND --- */
+#post-79 .rencontrer .wp-block-columns:nth-child(4) {
+  position: relative;
+  top: 21rem;           /* 336px; */
+  background-image: url('http://colorsandfonts.local/wp-content/uploads/2024/04/svg3-1.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 34.625rem;    /*  554px;  */
+}
+
+@media (min-width: 782px) and (max-width: 1024px) {
+  #post-79 .rencontrer .wp-block-columns:nth-child(4) {
+    top: 22rem;
+    background-color: var(--body-bg-color);
+    height: 31rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  #post-79 .rencontrer .wp-block-columns:nth-child(4) {
+    top: 16rem;
+    height: 50rem;
+    background-color: var(--body-bg-color);
+  }
+}
+
+/* --- Le titre 'L'équipe' --- */
+.rencontrer > h2.wp-block-heading:nth-of-type(1) {
+  position: absolute;
+  top: 29.69rem;      /* 475px; */
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+@media (min-width: 782px) and (max-width: 1024px) {
+  .rencontrer>h2.wp-block-heading:nth-of-type(1) {
+    top: 27.5rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .rencontrer>h2.wp-block-heading:nth-of-type(1) {
+    top: 17.5rem;
+  }
+}
+
+/* --- --- THE Staff container --- --- */
+.wp-block-columns:nth-child(4) .wp-block-column .wp-block-columns {
+  position: relative;
+  top: 14.19rem; /* 220px; */
+  left: 19.5rem; /* 312px; */
+  width: 56.6%;     /* 814px; */
+  height: 15.81rem; /* 253px; */
+}
+
+@media (min-width: 782px) and (max-width: 1024px) {
+  .wp-block-columns:nth-child(4) .wp-block-column .wp-block-columns {
+    top: 12.5rem;
+    left: 10%;
+    width: 80%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .wp-block-columns:nth-child(4) .wp-block-column .wp-block-columns {
+    top: 4.5rem;
+    left: 40%;
+    width: 25%;
+    height: 40.5rem;
+  }
+}
+
+
+/* --- Les 3 blocs des membres du staff --- */
+.wp-block-columns:nth-child(4) .wp-block-column .wp-block-columns .wp-block-column:nth-child(1) {
+  justify-content: var(--justify-between);
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .wp-block-columns:nth-child(4) .wp-block-column .wp-block-columns .wp-block-column:nth-child(1) {
+    justify-content: var(--justify-around);
+  }
+}
+
+.wp-block-columns:nth-child(4) .wp-block-column .wp-block-columns .wp-block-column {
+  display: var(--display-flex);
+  justify-content: var(--justify-around);
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .wp-block-columns:nth-child(4) .wp-block-column .wp-block-columns .wp-block-column {
+    display: block;
+  }
+}
+
+.wp-block-columns:nth-child(4) .wp-block-column .wp-block-columns .wp-block-column:nth-child(3) {
+  justify-content: flex-end;
+}
+
+/* --- Détails (img, nom, fonctions) pour chaque membre --- */
+#member-box {
+  position: relative;
+  width: 10.44rem; /* 167px; */
+  height: 15.81rem; /* 253px; */
+
+  display: var(--display-flex);
+  flex-direction: var(--flex-vertical);
+  justify-content: var(--justify-between);
+}
+
+@media (min-width: 782px) and (max-width: 1024px) {
+  #member-box {
+    width: 9.5rem;
+    height: 14.3rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  #member-box {
+    width: 8.5rem;
+    height: 13rem;
+    justify-content: center;
+  }
+}
+
+.member-img {
+  width: 10.44rem; /* 167px; */
+  height: 10.44rem; /* 167px; */
+}
+
+@media (min-width: 782px) and (max-width: 1024px) {
+  .member-img {
+    width: 9.5rem;
+    height: 9.5rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .member-img {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+}
+
+#member-box>.member-name {
+  font-weight: 700;
+}
+
+/* --- --- --- --- --- --- --- --- SECTION NOUS CONTACTER --- --- --- --- --- --- --- */
+/* --- Le titre h2 'Nous contacter' --- */
+.rencontrer h2:nth-of-type(2) {
+  position: absolute;
+  top: 59.75rem; /* 956px; */
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+@media (min-width: 782px) and (max-width: 1024px) {
+  .rencontrer h2:nth-of-type(2) {
+    top: 57rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .rencontrer h2:nth-of-type(2) {
+    top: 68.5rem;
+  }
+}
+
+/* --- La rosace 2 --- */
+.rencontrer figure:nth-of-type(2) {
+  position: absolute;
+  top: 92.75rem; /* 1484px; */
+  left: 31.8%; /* 28.63rem;    /* 458px; */
+  width: 147.32px;
+  height: 9.18rem; /* 134.97px; */
+}
+
+@media (min-width: 782px) and (max-width: 1024px) {
+  .rencontrer figure:nth-of-type(2) {
+    top: 92rem;
+    left: 21%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  .rencontrer figure:nth-of-type(2) {
+    top: 102.75rem;
+    left: 2%;
+  }
+}
+
+/* -- --- --- --- --- --- --- -- */
+/* --- --- LE FORMULAIRE --- --- */
+
+/* --- Le conteneur --- */
+#wpcf7-f76-p79-o1 {
+  position: absolute;
+  width: 100%;
+  height: 38.31rem; /* 613px; */
+  top: 64.81rem; /* 1037px; */
+}
+
+@media (min-width: 782px) and (max-width: 1024px) {
+  #wpcf7-f76-p79-o1 {
+    height: 42rem;
+    top: 62rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  #wpcf7-f76-p79-o1 {
+    top: 73rem;
+  }
+}
+
+#wpcf7-f76-p79-o1 form {
+  height: inherit;
+  display: var(--display-flex);
+  flex-direction: var(--flex-vertical);
+  justify-content: var(--justify-between);
+}
+
+/* -- La balise p -- */
+#wpcf7-f76-p79-o1 form p { 
+  text-align: left;
+  width: 100%;
+  display: var(--display-flex);
+  justify-content: var(--justify-around);
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  #wpcf7-f76-p79-o1 form p {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  #wpcf7-f76-p79-o1 form p * {
+    display: block;
+    width: 98%;
+  }
+}
+
+/* --- Les balises 'input et textarea' --- */
+.wpcf7-form p label span input, 
+.wpcf7-form p label span textarea {
+  width: 23.93rem; /* 383px; */
+  border-radius: 7px;
+  border: solid 0 rgba(0, 0, 0, 0);
+  margin-top: 13px;     /* marge avec le texte du 'label' */
+}
+
+.wpcf7-form p label span input {
+  height: 4.4rem; /* 71px; */
+}
+
+.wpcf7-form p label span textarea {
+  height: 16rem; /* 273px; */
+}
+
+.wpcf7-form p input.wpcf7-submit {
+  margin-left: 41.31rem; /* 621px; */
+  margin-right: 41.31rem;  /* 621px; */
+}
+
+.wpcf7-form p .wpcf7-spinner, .wpcf7-form::before {
+  width: 0rem;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+#wpcf7-f76-p79-o1 > form p:nth-child(5) {
+  display: var(--display-flex);
+  justify-content: var(--justify-around);
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  #wpcf7-f76-p79-o1>form p:nth-child(5) {
+    display: block;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  #wpcf7-f76-p79-o1>form p:nth-child(5) input[type='submit'] {
+    width: 94%;
+    margin: 0;
+  }
+}
+
+/* --- Canettes de bas de page --- */
+.rencontrer figure:nth-of-type(3) {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.wp-image-569 {
+  width: 100%;
+}
