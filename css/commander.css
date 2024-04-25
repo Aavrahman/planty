@@ -4,7 +4,7 @@
 .commander {
     position: absolute;
     width: 100%;
-    height: 1232px;
+    height: 77rem;        /*  1232px; */
     display: flex;
     flex-wrap: wrap;
     background-color: var(--commander-bg-title-color);
@@ -12,7 +12,7 @@
 
 @media (min-width: 320px) and (max-width: 781.99px) {
     .commander {
-        height: 173rem;
+        height: 171rem;
     }
 }
 
@@ -20,7 +20,7 @@
 /* --- Section Titre H1 'COMMANDER' --- */
 
 .commander h1 {
-    top: 69px;
+    top: 4.31rem;   /*  69px;       */
     color: var(--body-bg-color);
 }
 
@@ -53,18 +53,18 @@ hr {
 
 /* --- Premier Séparateurs --- */
 .wp-block-separator:nth-of-type(1) {
-    top: 184px;
+    top: 11.5rem;   /* 184px;   */
 }
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
     .wp-block-separator:nth-of-type(1) {
-        top: 160px;
+        top: 10rem;     /* 160px;   */
     }
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
     .wp-block-separator:nth-of-type(1) {
-        top: 130px;
+        top: 8.125rem;  /* 130px;   */
     }
 }
 
@@ -73,7 +73,7 @@ hr {
 /* --- --- --- Le titre h2 'Votre Commande' --- --- --- */
 .commander h2.wp-block-heading:nth-of-type(1) {
     position: absolute;
-    top: 224px;
+    top: 14rem; /*  224px;  */
     left: 20.27%;    /* 292px;   */
     color: var(--body-bg-color);
     font-style: var(--parag-font-style);
@@ -83,14 +83,14 @@ hr {
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
     .commander h2.wp-block-heading:nth-of-type(1) {
-        top: 210px;
+        top: 13.125rem; /*  210px;  */
         left: 5%;
     }
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
     .commander h2.wp-block-heading:nth-of-type(1) {
-        top: 180px;
+        top: 11.25rem;  /*  180px;  */
         left: 4%;
         width: 92%;
         font-size: var(--mobile-h2-font-size);
@@ -102,16 +102,15 @@ hr {
 
 #post-61 .wp-container-core-columns-is-layout-1 {
     position: absolute;
-    top: 299px;
+    top: 18.68rem;  /*  299px;  */
     left: 20.27%;     /* 292px;   */
     width: 59.72%;     /* 860px; */
-    height: 199px;
+    height: 12.43rem;   /* 199px;   */
     background-color: var(--commander-bg-title-color);
 }
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
     #post-61 .wp-container-core-columns-is-layout-1 {
-        top: 290px;
         left: 5%;
         width: 90%;
     }
@@ -119,7 +118,7 @@ hr {
 
 @media (min-width: 320px) and (max-width: 781.99px) {
     #post-61 .wp-container-core-columns-is-layout-1 {
-        top: 240px;
+        top: 15rem; /* 240px;   */
         left: 2%;
         width: 96%;
         height: 35%;
@@ -127,8 +126,7 @@ hr {
 }
 
 #post-61 .commander .wp-container-core-columns-is-layout-1 .wp-block-column {
-    width: 193.21px;
-    height: 199px;
+    width: 12.07rem;    /* 193.21px;    */
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
@@ -143,7 +141,7 @@ hr {
 /* --- #post-61 .wp-container-core-columns-is-layout-1 .wp-block-column .image-produit --- */
 #post-61 .image-produit {
     width: 100%;            /* 193.6px; */
-    height: 128.97px;
+    height: 8.023rem;       /* 128.97px;    */
     margin-left: 0;
     margin-right: 0;
     background-size: 100%;
@@ -185,8 +183,8 @@ hr {
 /* - Le Layout : #post-61 .wp-container-core-columns-is-layout-1 .wp-block-column .image-produit .div-nom --- */
 #post-61 .image-produit .div-nom {
     display: flex;
-    width: 149.2px;
-    height: 28.415px;
+    width: 9.325rem;    /* 149.2px; */
+    height: 1.7775rem;  /* 28.415px;    */
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
@@ -194,7 +192,7 @@ hr {
 
 /* - Le texte, Typographie - */
 .wp-container-core-columns-is-layout-1 .wp-block-column .image-produit .nom-produit {
-    font-size: 20px;
+    font-size: 1.25rem; /*  20px;   */
     z-index: 5;
 }
 
@@ -210,7 +208,7 @@ hr {
     position: absolute;
     bottom: 0px;
     width: 22.5%;
-    height: 56px;
+    height: 3.5rem; /*   56px;  */
 
     display: var(--display-flex);
     justify-content: var(--justify-between);
@@ -226,8 +224,7 @@ hr {
 
 /* --- --- --- zéro, plus, moins : le cadre --- --- --- */
 .choix-cadre {
-    width: 82px;    /* 40%; */
-    height: 56px;
+    width: 5.125rem;    /* 82px; */
     display: var(--display-flex);
 }
 
@@ -246,8 +243,7 @@ hr {
 /* --- */
 /* --- --- nombre zéro : le cadre--- --- */
 .affichage-quantite-cadre {
-    width: 51px;
-    height: 56px;
+    width: 3.187rem;    /* 51px;    */
     background-color: var(--body-bg-color);
     filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.04));
 
@@ -277,8 +273,7 @@ hr {
 /* --- */
 /* --- --- Ajouter - Supprimer : la cadre --- --- */
 .plus-moins-cadre {
-    width: 31px;
-    height: 56px;
+    width: 1.937rem; /* 31px;   */
     background-color: var(--menu-commander-color);
     filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.04));
 
@@ -317,7 +312,6 @@ hr {
 /* --- Le carré OK --- */
 .validation-cadre {
     width: 100px;
-    height: 56px;
     padding: 9px 0px 10px;
 
     display: var(--display-flex);
@@ -354,18 +348,18 @@ hr {
 }
 
 .wp-block-separator:nth-of-type(2) {
-    top: 538px;
+    top: 33.625rem; /*  538px;  */
 }
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
     .wp-block-separator:nth-of-type(2) {
-        top: 520px;
+        top: 32.5rem;   /*   520px; */
     }
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
     .wp-block-separator:nth-of-type(2) {
-        top: 1308px;
+        top: 81.75; /* 1308px;  */
     }
 }
 
@@ -381,10 +375,10 @@ hr {
 /* --- --- --- --- --- --- Le Conteneur du Formulaire --- --- --- --- --- --- */
 #wpcf7-f462-p61-o1 {
     position: absolute;
-    top: 591px;
-    left: 292px;
-    width: 860px;
-    height: 570px;
+    top: 36.937rem; /* 591px;   */
+    left: 18.25rem;     /* 292px;   */
+    width: 53.75rem;    /* 860px;   */
+    height: 35.625rem;  /* 570px;   */
 }
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
@@ -396,10 +390,10 @@ hr {
 
 @media (min-width: 320px) and (max-width: 781.99px) {
     #wpcf7-f462-p61-o1 {
-        top: 1365px;
+        top: 85.31rem;  /* 1365px;  */
         left: 4%;
         width: 92%;
-        height: 1140px;
+        height: 71.25rem;   /* 1140px;  */
     }
 }
 
@@ -432,7 +426,7 @@ hr {
     position: relative;
     top: 0px;
     display: block;
-    width: 383px;
+    width: 23.94rem; /*  383px; */
 }
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
@@ -451,13 +445,13 @@ hr {
 
 /* --- --- --- --- --- --- Le séparateurr --- --- --- --- --- --- */
 .separateur {
-    height: 449px;
+    height: 463px; /* 28.93rem;   /* 463px;   */
     border-left: 1px solid var(--body-bg-color);
 }
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
     .separateur {
-        height: 462px;
+        height: 28.875rem;  /* 462px;   */
         border-left: 3px solid var(--body-bg-color);
     }
 }
@@ -465,7 +459,7 @@ hr {
 @media (min-width: 320px) and (max-width: 781.99px) {
     .separateur {
         position: absolute;
-        top: 510px;
+        top: 31.875rem;     /* 510px;   */
         width: 100%;
         height: 1px;
         border-left: 0px solid var(--body-bg-color);
@@ -488,7 +482,7 @@ hr {
     position: relative;
     display: block;
     width: 100%;
-    height: 71px;
+    height: 4.438rem;   /* 71px;    */
 
     border-radius: 7px;
 
@@ -503,7 +497,7 @@ hr {
 #order-form p,
 #order-form p label {
     width: 100%;
-    height: 108px;
+    height: 6.75rem;    /* 108px;   */
     display: var(--display-flex);
     flex-wrap: wrap;
     align-content: space-between;
@@ -511,17 +505,17 @@ hr {
 
 #order-form p:nth-of-type(1) {
     position: absolute;
-    top: 65px;
+    top: 4.06rem;   /* 65px;    */
 }
 
 #order-form p:nth-of-type(2) {
     position: absolute;
-    top: 203px;
+    top: 12.688rem; /* 203px; */
 }
 
 #order-form p:nth-of-type(3) {
     position: absolute;
-    top: 341px;
+    top: 21.31rem;  /* 341px;   */
 }
 
 /* --- --- --- --- --- --- Le bouton submit --- --- --- --- --- --- */
@@ -538,4 +532,3 @@ hr {
         margin-left: 25%;
     }
 }
-
