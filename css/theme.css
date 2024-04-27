@@ -64,7 +64,6 @@
 }
 
 body {
-    width: 90rem;
     position: absolute;
     margin: 0 auto;
 }
@@ -328,53 +327,6 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
 }
 
 /* --- --- --- --- --- -- C O N T A I N E R S -- --- --- --- --- --- - */
-#container, #content, article#post-99, .entry-content {            
-    height: 173.125rem;                                     /* 2770px; */
-}
-
-@media (min-width: 782px) and (max-width: 1439.99px) {
-    #container, #content, article#post-99, .entry-content {
-        height: 135.688rem;         /* 2171px;  */
-    }
-}
-
-@media (min-width: 320px) and (max-width: 781.99px) {
-    #container, #content, article#post-99, .entry-content {
-        height: 190.5rem;         /* 3048px; */
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* --- --- --- --- --- T A G S - C O M M O N - C L A S S E S --- --- --- --- --- */
 

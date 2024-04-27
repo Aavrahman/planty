@@ -1,3 +1,33 @@
+/* --- LE TEMPLATE --- */
+#wrapper {
+  position: absolute;
+  top: 0px;
+  height: 181.875rem; /* 2910px  */
+}
+
+#container {
+  top: 5rem;
+}
+
+#container, #content, #post-99, .entry-content {
+  left: 0px;
+  width: 100%;
+  height: 176.875rem;                                     /* 2830px; */
+  background-color: var(--container-bg-color);
+}
+
+@media (min-width: 782px) and (max-width: 1439.99px) {
+  #container,  #content,  article#post-99,  .entry-content {
+    height: 135.688rem;    /* 2171px;  */
+  }
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+  #container, #content, article#post-99, .entry-content {
+    height: 190.5rem;
+  }
+}
+
 /* --- --- --- --- --- --- --- --- SECTION SUPERIEURE --- --- --- --- --- --- --- --- */
 
 /* --- Titre h1 : BOISSON ENERGISANTE 100% NATURELLE --- */
