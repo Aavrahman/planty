@@ -1,73 +1,66 @@
-/* --- LE TEMPLATE --- */
-#wrapper {
-  position: absolute;
-  top: 0px;
-  height: 181.875rem; /* 2910px  */
-}
-
-#container {
-  top: 5rem;
-}
-
-#container, #content, #post-99, .entry-content {
-  left: 0px;
-  width: 100%;
-  height: 176.875rem;                                     /* 2830px; */
-  background-color: var(--container-bg-color);
+/* --- --- --- --- --- -- C O N T A I N E R S -- --- --- --- --- --- - */
+.entry-content {
+  height: 173.125rem;  /* 2770px; */
+  position: relative;
 }
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
-  #container,  #content,  article#post-99,  .entry-content {
-    height: 135.688rem;    /* 2171px;  */
+  .entry-content {
+    height: 132.7rem;
   }
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
-  #container, #content, article#post-99, .entry-content {
-    height: 190.5rem;
+  .entry-content {
+    height: 176.5rem;
   }
 }
+
 
 /* --- --- --- --- --- --- --- --- SECTION SUPERIEURE --- --- --- --- --- --- --- --- */
 
 /* --- Titre h1 : BOISSON ENERGISANTE 100% NATURELLE --- */
 
 .entry-content h1 {
-  top: 11.563rem;  /* 185px; */
+  top:6.56rem;  /* 185 - 80px; */
   color: var(--commander-bg-title-color);  
 }
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
   .entry-content h1 {
-    top: 9.7rem;      /* 104px  */
+    top: 4.7rem;
+    width: 100%;
   }
 }
   
 @media (min-width: 320px) and (max-width: 781.99px) {
  .entry-content h1 {
-    top: 5rem;
+    top: 3rem;
+    width: 100%;
   }
 }
 
 /* --- CONTENEUR EXTERIEUR DES GRAPHIQUES --- */
 .entry-content .wp-container-core-columns-is-layout-1 {
   position: absolute;
-  top: 10.188rem; /* 163px */
-  width: 100%; /* 1440px; */
+  top: 5.187rem; /* 163 - 80px */
+  width: var(--full-width); /* 1440px; */
   height: 59.375rem;   /* 950px; */
   fill: #E3D9D0;
 }
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
   .entry-content .wp-container-core-columns-is-layout-1 {
-    top: 9rem;
-    height: 37rem;
+    top: 5rem;
+    width: 100%;
+    height: 35rem;
   }
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
   .entry-content .wp-container-core-columns-is-layout-1 {
     top: 3rem;
+    width: 100%;
     height: 27rem;
   }
 }
@@ -88,7 +81,7 @@
 
 @media (min-width: 320px) and (max-width: 781.99px) {
   .entry-content .wp-block-columns:nth-child(2) .wp-block-column {
-    height: 28rem;
+    height: 29rem;
   }
 }
 
@@ -133,7 +126,7 @@
 @media (min-width: 320px) and (max-width: 781.99px) {
   .titre-et-image img {
     width: 100%;
-    height: 15rem;
+    height: 17rem;
     top: 6rem;
   }
 }
@@ -200,20 +193,22 @@
 
 .entry-content .wp-block-columns:nth-child(3) {
   position: absolute;
-  top: 58rem;               /*  928px */
-  width: 100%;
+  top: 53rem;               /*  928 - 80px */
+  width: var(--full-width);
   z-index: 10;
 }
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
   .entry-content .wp-block-columns:nth-child(3) {
-    top: 38rem;
+    top: 33.5rem;
+    width: 100%;
   }
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
   .entry-content .wp-block-columns:nth-child(3) {
     top: 24rem;
+    width: 100%;
     height: 285px;
   }
 }
@@ -261,14 +256,14 @@
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
   #accueil-presentation h2 {
-    top: 30%;
+    top: 29.5%;
     width: 100%;
   }
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
   #accueil-presentation h2 {
-    top: 7%;
+    top: 21%;
   }
 }
 
@@ -281,16 +276,16 @@
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
   #accueil-presentation p {
-    width: 50%;
-    top: 42%;
-    left: 22.5%;
+    width: 70%;
+    top: 34.5%;
+    left: 15%;
   }
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
   #accueil-presentation p {
     width: 90%;
-    top: 13%;
+    top: 31%;
     left: 5%;
   }
 }
@@ -300,7 +295,8 @@
 /* titre 'LES GOUTS'*/
 .entry-content h2:nth-child(4) {
   position: absolute;
-  top: 87.563rem;                             /*1401px; */
+  top: 82.56rem;               /*1401 - 80px; */
+  width: var(--full-width);
 
   color: #D2776A;
   text-align: center;
@@ -310,32 +306,36 @@
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
   .entry-content h2:nth-child(4) {
-    top: 60rem;
+    top: 55rem;
+    width: 100%;
   }
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
   .entry-content h2:nth-child(4) {
     top: 46rem;
+    width: 100%;
   }
 }
 
 /* La phrase paragraphe */
 .entry-content p:nth-child(5) {
   position: absolute;
-  top: 90.44rem;                      /* 1444px;  */
-  width: 100%;
+  top: 85.25rem;        /* 1444 - 80px;  */
+  width: var(--full-width);
 }
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
   .entry-content p:nth-child(5) {
-    top:63rem;
+    top: 57.5rem;
+    width: 100%;
   }
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
   .entry-content p:nth-child(5) {
     top: 49rem;
+    width: 100%;
   }
 }
 
@@ -344,15 +344,14 @@
 /* -- Outer column container -- */
 .wp-container-core-columns-is-layout-3 {
   position: absolute;
-  top: 94.75rem;          /* 1516px;  */
+  top:89.81rem;      /* 1516 - 80px;  */
   left: 20.27%;
-  width: 59.72%;
   height: 37.875rem;      /* 606px : (263 * 2) + 80 ( 40 * 2) */
 }
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
   .wp-container-core-columns-is-layout-3 {
-    top: 66rem;
+    top: 62rem;
     left: 0rem;
     width: 100%;
     height: 30rem;
@@ -361,7 +360,7 @@
 
 @media (min-width: 320px) and (max-width: 781.99px) {
   .wp-container-core-columns-is-layout-3 {
-    top: 55rem;
+    top: 53rem;
     left: 0rem;
     width: 100%;
     height: 56rem;
@@ -370,6 +369,7 @@
 
 /* -- Inner column container -- */
 .entry-content .wp-block-columns:nth-child(6) .wp-block-column {
+  width: 52.875rem;     /* 846px; */
   display: var(--display-flex);
   flex-wrap: wrap;
 }
@@ -411,10 +411,11 @@
 
 @media (min-width: 320px) and (max-width: 781.98px) {
   .image-produit {
-    width: 100%;
+    width: 90%;
     height: 12.5rem;
     background-size: cover;
-    margin: 0.75rem;
+    margin-left: 5%;
+    margin-bottom: 4%;
   }
 }
 
@@ -445,7 +446,7 @@
 /* --- --- --- SOUS  SECTION PRODUIT : THE CTA - --- --- --- */
 .button-box {
   position: absolute;
-  top: 133rem;
+  top: 128rem;    /* 2128 - 80px */
   width: 100%;
 
   display: var(--display-flex);
@@ -454,13 +455,13 @@
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
   .button-box {
-    top: 100rem;
+    top: 95rem;
   }
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
   .button-box {
-    top: 113rem;
+    top: 112rem;
   }
 }
 
@@ -469,7 +470,7 @@
 /* -- bloc exterieur avec graphe de canettes -- */
 div.entry-content>div:nth-child(8) {
   position: absolute;
-  top: 138.25rem;           /* 2212px;  */
+  top: 133.25rem;           /* 2212 - 80px;  */
   width: 100%;
   height: 39.875rem; /* 638px;  */
 
@@ -481,15 +482,16 @@ div.entry-content>div:nth-child(8) {
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
   div.entry-content>div:nth-child(8) {
-    top: 108.125rem;
+    top: 101.5rem;
     height: 31.25rem;
+    background-size: cover;
   }
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
   div.entry-content>div:nth-child(8) {
-    top: 120rem;
-    height: 73.5rem;
+    top: 119rem;
+    height: 57.5rem;
     background-size: auto;
     background-image: url();
     background-color: var(--body-bg-color);
@@ -508,19 +510,19 @@ div.entry-content>div:nth-child(8) {
 /* --- --- --- BLOC DU TITRE h2 'CE QU’ILS EN PENSENT' --- --- ---*/
 .entry-content div:nth-child(9) {
   position: absolute;
-  top: 146.563rem;
+  top: 141.56rem;   /* 2345 - 80px */
   width: 100%;
 }
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
   .entry-content div:nth-child(9) {
-    top: 112rem;
+    top: 107rem;
   }
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
   .entry-content div:nth-child(9) {
-    top: 123rem;
+    top: 124rem;
   }
 }
 
@@ -537,14 +539,14 @@ div.entry-content>div:nth-child(8) {
 /* LE BLOC CONTENEUR */
 .entry-content div:nth-child(10) {
   position: absolute;
-  top: 154.063rem;            /* 2465px;  */
+  top: 149.06rem;            /* 2465 - 80px;  */
   left: 8.25rem; /* 132px; */
   width: 73.188rem; /* 1171px; */
 }
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
   .entry-content div:nth-child(10) {
-    top: 118rem;
+    top: 113rem;
     width: 100%;
     left: 0rem;
   }
@@ -552,9 +554,9 @@ div.entry-content>div:nth-child(8) {
 
 @media (min-width: 320px) and (max-width: 781.99px) {
   .entry-content div:nth-child(10) {
-    width: 94%;
-    top: 133rem;
-    left: 3%;
+    width: 90%;
+    top: 130rem;
+    left: 4%;
   }
 }
 

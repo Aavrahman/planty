@@ -68,40 +68,54 @@ body {
     margin: 0 auto;
 }
 
-/* --- --- --- --- --- --- --- --- -- W R A P P E R -- --- --- --- --- --- --- --- --- */
-body, #wrapper, #header, #footer, #container, main, article, .entry-content {
-    width: 90rem;
-}
-
 @media (min-width: 782px) and (max-width: 1439.99px) {
-    body, #wrapper, #header, #footer, #container, main, article, .entry-content {
-        max-width: 100%;
+    body {
+        width: 100%;
     }
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
-    body, #wrapper, #header, #footer, #container, main, article, .entry-content {
-        max-width: 100%;
+    body {
+        width: 100%;
     }
 }
 
-#post-99 .entry-content, #post-79 .entry-content {
+/* --- --- --- --- --- --- --- --- -- W R A P P E R -- --- --- --- --- --- --- --- --- */
+.entry-content, .rencontrer, .commander {
+    width: 90rem;
     background-color: var(--container-bg-color);
+}
+
+@media (min-width: 782px) and (max-width: 1439.99px) {
+    .entry-content, .rencontrer, .commander {
+        width: 100%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 781.99px) {
+    .entry-content, .rencontrer, .commander {
+        width: 100%;
+    }
 }
 
 /* --- --- --- --- --- --- --- --- --- H E A D E R --- --- --- --- --- --- --- --- --- */
 #header {
-    top: 0px;
     height: 5rem;    /* 80px; */
 
     display: var(--display-flex);
     justify-content: var(--justify-between);
-    background-color: var(--body-bg-color);
+}
+
+@media (min-width: 782px) and (max-width: 1439.99px) {
+    #header {
+        width: 100%;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
     #header {
         height: 3.125rem;
+        width: 100%;
     }
 }
 
@@ -117,7 +131,7 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
     #branding {
-        width: 26.9%;
+        width: 20%;
     }
 }
 
@@ -139,7 +153,9 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
     #menu {
-        width: 28rem;
+        width: 45%;
+        position: absolute;
+        right: 0px;
     }
 }
 
@@ -222,13 +238,13 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
 
     width: 100%;
 }
-
+/*
 @media (min-width: 782px) and (max-width: 1439.99px) {
     #menu-header_menu,  #menu-visiteur {
         height: 5rem;
     }
 }
-
+*/
 @media (min-width: 320px) and (max-width: 781.99px) {
     #menu-header_menu, #menu-visiteur {
         display: var(--display-flex);
@@ -326,14 +342,12 @@ body, #wrapper, #header, #footer, #container, main, article, .entry-content {
     background-color: var(--menu-commander-hover-color);
 }
 
-/* --- --- --- --- --- -- C O N T A I N E R S -- --- --- --- --- --- - */
-
 /* --- --- --- --- --- T A G S - C O M M O N - C L A S S E S --- --- --- --- --- */
 
 h1 {
     position: absolute;
     font-size: var(--h1-font-size);
-    width: 100%;
+    width: var(--full-width);
     font-style: var(--parag-font-style);
     font-weight: 800;
     line-height: normal;
@@ -349,8 +363,7 @@ h1 {
     }
 }
 
-h2 {
-    width: 100%;
+h2 {     
     font-size: var(--h2-font-size);
     font-style: normal;
     line-height: normal;
