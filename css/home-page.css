@@ -29,14 +29,12 @@
 @media (min-width: 782px) and (max-width: 1439.99px) {
   .entry-content h1 {
     top: 4.7rem;
-    width: 100%;
   }
 }
   
 @media (min-width: 320px) and (max-width: 781.99px) {
  .entry-content h1 {
     top: 3rem;
-    width: 100%;
   }
 }
 
@@ -237,7 +235,7 @@
 
 @media (min-width: 320px) and (max-width: 781.99px) {
   #accueil-presentation {
-    min-width: 20rem;
+    width: 99%;
     height: 285px;
     background-image: url();
     background-color: var(--body-bg-color);
@@ -263,7 +261,7 @@
 
 @media (min-width: 320px) and (max-width: 781.99px) {
   #accueil-presentation h2 {
-    top: 21%;
+    top: 8%;
   }
 }
 
@@ -285,7 +283,7 @@
 @media (min-width: 320px) and (max-width: 781.99px) {
   #accueil-presentation p {
     width: 90%;
-    top: 31%;
+    top: 21%;
     left: 5%;
   }
 }

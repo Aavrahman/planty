@@ -11,7 +11,7 @@
 
 @media (min-width: 320px) and (max-width: 781.99px) {
     .commander {
-        height: 171rem;
+        height: 161rem;
     }
 }
 
@@ -57,13 +57,13 @@ hr {
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
     .wp-block-separator:nth-of-type(1) {
-        top: 10rem;     /* 160px;   */
+        top: 10rem;
     }
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
     .wp-block-separator:nth-of-type(1) {
-        top: 8.125rem;  /* 130px;   */
+        top: 9.2rem;
     }
 }
 
@@ -89,7 +89,7 @@ hr {
 
 @media (min-width: 320px) and (max-width: 781.99px) {
     .commander h2.wp-block-heading:nth-of-type(1) {
-        top: 11.25rem;  /*  180px;  */
+        top: 12.5rem;  /*  180px;  */
         left: 4%;
         width: 92%;
         font-size: var(--mobile-h2-font-size);
@@ -117,7 +117,7 @@ hr {
 
 @media (min-width: 320px) and (max-width: 781.99px) {
     #post-61 .wp-container-core-columns-is-layout-1 {
-        top: 15rem; /* 240px;   */
+        top: 16rem;
         left: 2%;
         width: 96%;
         height: 35%;
@@ -347,7 +347,7 @@ hr {
 }
 
 .wp-block-separator:nth-of-type(2) {
-    top: 33.625rem; /*  538px;  */
+    top: 80.625rem; /*  538px;  */
 }
 
 @media (min-width: 782px) and (max-width: 1439.99px) {

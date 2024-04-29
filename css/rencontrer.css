@@ -89,7 +89,6 @@
 @media (min-width: 782px) and (max-width: 1439.99px) {
   .rencontrer h1 {
     top: 7.5rem;
-    width: 100%;
     font-size: var(--tablet-h1-font-size);
   }
 }
@@ -97,7 +96,6 @@
 @media (min-width: 320px) and (max-width: 781.99px) {
   .rencontrer h1 {
     top: 3rem;
-    width: 100%;
   }
 }
 
