@@ -2,8 +2,7 @@
 
 /* --- LE TEMPLATE --- */
 .commander {
-    position: absolute;
-    width: 100%;
+    position: relative;
     height: 77rem;        /*  1232px; */
     display: flex;
     flex-wrap: wrap;

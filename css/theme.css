@@ -363,7 +363,9 @@ h1 {
     }
 }
 
-h2 {     
+h2 {
+    width: 100%;
+
     font-size: var(--h2-font-size);
     font-style: normal;
     line-height: normal;
