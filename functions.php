@@ -1,7 +1,6 @@
 <?php
 
 /* ** ** ** ** ** ** ** * S T Y L E S * ** ** ** ** ** ** **/
-
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 function theme_enqueue_styles()
 {
@@ -20,13 +19,9 @@ function theme_enqueue_styles()
 
     /** commander.css */
     wp_enqueue_style('commander-style', get_stylesheet_directory_uri() . '/css/commander.css', array(), filemtime(get_stylesheet_directory() . '/css/commander.css'));
-
 }
 
-
-/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
-/* ** ** ** ** ** ** ** ** M E N U S ** ** ** ** ** ** ** **/
-
+/* ** ** ** ** ** * ENREGISTREMENT DE MENUS * ** ** ** ** **/
 function register_header_menu()
 {
     register_nav_menu('header_menu', __('Main Menu'));
@@ -47,10 +42,7 @@ function register_footer_menu()
 }
 add_action('init', 'register_footer_menu');
 
-
-/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
 /** ** ** ** ** ** ** ** MENU CONNECTE  ** ** ** ** ** ** **/
-
 function connected_menu( $args = '' ) {
 
     if( is_user_logged_in()) { 
@@ -64,8 +56,7 @@ function connected_menu( $args = '' ) {
 
 add_filter( 'wp_nav_menu_args', 'connected_menu' );
 
-/*** */
-
+/** Footer menu* */
 function the_footer_menu($args = '')
 {
     if ($args['theme_location'] == 'Footer') {
@@ -76,8 +67,5 @@ function the_footer_menu($args = '')
 
 add_filter('wp_nav_menu_args', 'the_footer_menu');
 
-
-/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
 /** ** ** ** ** ** * SHORT CODES / WIDGETS ** ** ** ** ** **/
-
 require_once(__DIR__ . '/shortcodes/shortcodes.php');

@@ -238,13 +238,7 @@ body {
 
     width: 100%;
 }
-/*
-@media (min-width: 782px) and (max-width: 1439.99px) {
-    #menu-header_menu,  #menu-visiteur {
-        height: 5rem;
-    }
-}
-*/
+
 @media (min-width: 320px) and (max-width: 781.99px) {
     #menu-header_menu, #menu-visiteur {
         display: var(--display-flex);
@@ -259,7 +253,7 @@ body {
     justify-content: var(--justify-between);
     align-items: var(--align-center);
 
-    height: 5rem;                                           /* 50px; */
+    height: 5rem;                                      /* 50px; */
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
@@ -300,12 +294,11 @@ body {
     width: 50%;
     display: var(--display-flex);
     justify-content: center;
-
 }
 
 .menu-item-155,
 .menu-item-215 {
-    width: 45.73%;                                          /* 236px; */
+    width: 45.73%;               /* 236px; */
     height: 5rem;
     background-color: var(--menu-commander-color);
 
@@ -329,7 +322,7 @@ body {
 
 .menu-item-155 a,
 .menu-item-215 a {
-    width: 100%;                                            /* 236px; */
+    width: 100%;                 /* 236px; */
 }
 
 .menu-item-155 span,
@@ -342,7 +335,7 @@ body {
     background-color: var(--menu-commander-hover-color);
 }
 
-/* --- --- --- --- --- T A G S - C O M M O N - C L A S S E S --- --- --- --- --- */
+/* --- --- --- --- --- C O M M O N - C L A S S E S - T A G S --- --- --- --- --- */
 
 h1 {
     position: absolute;

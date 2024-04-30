@@ -16,14 +16,12 @@
 }
 
 /* --- --- --- --- --- --- --- --- C O M M A N D E R --- --- --- --- --- --- --- --- */
-/* --- Section Titre H1 'COMMANDER' --- */
 
 .commander h1 {
     top: 4.31rem;   /*  69px;       */
     color: var(--body-bg-color);
 }
 
-/* --- --- --- TOUS LES EPARATEURS <hr> --- --- --- */
 hr {
     position: absolute;
     color: var(--body-bg-color);
@@ -50,7 +48,7 @@ hr {
     }
 }
 
-/* --- Premier Séparateurs --- */
+/* --- Premier Séparateur --- */
 .wp-block-separator:nth-of-type(1) {
     top: 11.5rem;   /* 184px;   */
 }
@@ -82,14 +80,14 @@ hr {
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
     .commander h2.wp-block-heading:nth-of-type(1) {
-        top: 13.125rem; /*  210px;  */
+        top: 13.125rem;
         left: 5%;
     }
 }
 
 @media (min-width: 320px) and (max-width: 781.99px) {
     .commander h2.wp-block-heading:nth-of-type(1) {
-        top: 12.5rem;  /*  180px;  */
+        top: 12.5rem;
         left: 4%;
         width: 92%;
         font-size: var(--mobile-h2-font-size);
@@ -97,8 +95,8 @@ hr {
 }
 
 /* --- --- --- --- --- --- LES CARTES --- --- --- --- --- --- */
-/* --- --- Le conteneur de la section 'Cartes' --- --- */
 
+/* --- --- Le conteneur de la section 'Cartes' --- --- */
 #post-61 .wp-container-core-columns-is-layout-1 {
     position: absolute;
     top: 18.68rem;  /*  299px;  */
@@ -202,7 +200,8 @@ hr {
 }
 
 /* --- --- --- --- --- --- CHOIX QUANTITE DE PRODUITS --- --- --- --- --- --- */
-/* --- --- --- le zéro, le plus et moins, le OK : le cadre --- --- --- */
+
+/* --- --- --- le zéro, le plus, le moins, le OK : le cadre --- --- --- */
 .le-caddey {
     position: absolute;
     bottom: 0px;
@@ -239,7 +238,6 @@ hr {
     }
 }
 
-/* --- */
 /* --- --- nombre zéro : le cadre--- --- */
 .affichage-quantite-cadre {
     width: 3.187rem;    /* 51px;    */
@@ -269,7 +267,6 @@ hr {
     line-height: normal;
 }
 
-/* --- */
 /* --- --- Ajouter - Supprimer : la cadre --- --- */
 .plus-moins-cadre {
     width: 1.937rem; /* 31px;   */
@@ -294,7 +291,7 @@ hr {
     background-color: var(--menu-commander-hover-color);
 }
 
-/* --- Ajouter - Diminuer : typographie --- */
+/* --- Ajouter - Enlever : typographie --- */
 .plus-moins-typo {
     color: var(--body-bg-color);
     font-size: var(--parag-font-size);
@@ -337,7 +334,7 @@ hr {
     background-color: var(--menu-commander-hover-color);
 }
 
-/* --- Les lettres OK --- */
+/* --- OK : Typographie --- */
 .validation-typo {
     color: var(--body-bg-color);
     font-size: var(--cta-font-size);
@@ -368,8 +365,7 @@ hr {
     cursor: pointer;
 }
 
-/* --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- */
-/* --- --- --- --- --- --- --- --- I N F O R M A T I O N S - D E - L I V R A I S O N --- --- --- --- --- --- --- --- */
+/* --- --- --- --- --- --- --- --- LE FORMULAIRE --- --- --- --- --- --- --- --- */
 
 /* --- --- --- --- --- --- Le Conteneur du Formulaire --- --- --- --- --- --- */
 #wpcf7-f462-p61-o1 {
@@ -442,7 +438,7 @@ hr {
     }
 }
 
-/* --- --- --- --- --- --- Le séparateurr --- --- --- --- --- --- */
+/* --- --- --- --- --- --- Le séparateurr vertical --- --- --- --- --- --- */
 .separateur {
     height: 463px; /* 28.93rem;   /* 463px;   */
     border-left: 1px solid var(--body-bg-color);

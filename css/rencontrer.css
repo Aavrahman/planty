@@ -40,22 +40,22 @@
 .wp-image-572 {
   position: relative;
   top: 3.31rem;     /*  53px; */
-  left: 8.33%; /*  120px; */
+  left: 8.33%;      /*  120px; */
   width: 13.33%;    /* 192.43px;  */
-  height: 11.75rem;       /*    188px;    */
+  height: 11.75rem;   /* 188px;  */
   transform: rotate(70deg);
 }
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
   .wp-image-572 {
-    top: 2.75rem;     /*  44px;   */
+    top: 2.75rem;   /* 44px; */
   }
 }
 
 /* --- LE rameau --- */
 .wp-block-image:nth-child(1) .wp-image-574 {
   position: absolute;
-  bottom: 0px; /*    top: 2.688rem; /* 43px; */
+  bottom: 0px;
   left: 82.5%; /* 1188px; */
   width: 13.26%; /*  191px; */
   height: 13.69rem; /* 219px; */
@@ -104,7 +104,7 @@
   position: absolute;
   top: 16.188rem; /* 259px; */
   left: 24.125rem; /* 386px; */
-  width: 46.44%; /* 41.81rem; 669px; */
+  width: 46.44%; /* 669px; */
 }
 
 @media (min-width: 782px) and (max-width: 1439px) {
@@ -299,7 +299,7 @@
 .rencontrer figure:nth-of-type(2) {
   position: absolute;
   top: 92.75rem; /* 1484px; */
-  left: 31.8%; /* 28.63rem;    /* 458px; */
+  left: 31.8%; /* 458px; */
   width: 147.32px;
   height: 9.18rem; /* 134.97px; */
 }
@@ -318,7 +318,6 @@
   }
 }
 
-/* -- --- --- --- --- --- --- -- */
 /* --- --- LE FORMULAIRE --- --- */
 
 /* --- Le conteneur --- */
@@ -378,7 +377,7 @@
   width: 23.93rem; /* 383px; */
   border-radius: 7px;
   border: solid 0 rgba(0, 0, 0, 0);
-  margin-top: 13px;     /* marge avec le texte du 'label' */
+  margin-top: 13px;
 }
 
 .wpcf7-form p label span input {

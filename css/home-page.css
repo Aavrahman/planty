@@ -20,7 +20,6 @@
 /* --- --- --- --- --- --- --- --- SECTION SUPERIEURE --- --- --- --- --- --- --- --- */
 
 /* --- Titre h1 : BOISSON ENERGISANTE 100% NATURELLE --- */
-
 .entry-content h1 {
   top:6.56rem;  /* 185 - 80px; */
   color: var(--commander-bg-title-color);  
@@ -64,7 +63,6 @@
 }
 
 /* --- --- CONTENEUR INTERIEUR DES GRAPHIQUES --- --- */
-
 .entry-content .wp-block-columns:nth-child(2) .wp-block-column {
   position: relative;
   height: 59.375rem;                /* 950px; */
@@ -267,9 +265,9 @@
 
 #accueil-presentation p {
   position: relative;
-  top: 12.313rem;                         /*  213px;  */
-  left: 32.5%; /*  472px; */
-  width: 34.5%; /* 497px; */
+  top: 12.313rem;     /*  213px;  */
+  left: 32.5%;    /* 472px; */
+  width: 34.5%;   /* 497px; */
 }
 
 @media (min-width: 782px) and (max-width: 1439.99px) {
@@ -388,10 +386,10 @@
 
 /* --- cards ---  */
 .image-produit {
-  width: 24.563rem;             /* 393px; */
-  height: 16.375rem;            /* 262px; */
-  margin-left: 0.938rem; /*15px; */
-  margin-right: 0.938rem; /* 15px; */
+  width: 24.563rem;     /* 393px; */
+  height: 16.375rem;    /* 262px; */
+  margin-left: 0.938rem;  /*15px; */
+  margin-right: 0.938rem;   /* 15px; */
 
   display: var(--display-flex);
   justify-content: var(--justify-around);
@@ -441,7 +439,7 @@
   }
 }
 
-/* --- --- --- SOUS  SECTION PRODUIT : THE CTA - --- --- --- */
+/* --- --- --- SOUS  SECTION PRODUIT : LE CTA - --- --- --- */
 .button-box {
   position: absolute;
   top: 128rem;    /* 2128 - 80px */

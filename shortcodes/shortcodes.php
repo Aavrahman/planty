@@ -14,27 +14,24 @@ function accueil_bloc_titre($atts)          //* Affichage bloc superieur page  a
     );
 
     ob_start();                             // Sauvegarde en mémoire de données (vars et/ou txt) qui suivent
-
     if ($atts['src'] != "") {
-?>
-
+    ?>
         <div class="titre-et-image">
             <img src=" <?= $atts['src'] ?>)">
         </div>
     <?php
     }
-
     $output = ob_get_contents();            // Récupération des données sauvegardées dans la var $output	
     ob_end_clean();
+
     return $output;
 }
 
 add_shortcode('titre-et-image', 'accueil_bloc_titre');
 
-/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
 
 /** ** ** ** ** bloc paragraphe developpement ** ** ** ** **/
-function accueil_bloc2_developpement($atts)
+function accueil_bloc2_developpement($atts)     // 'Energie des plantes + pargraphe
 {
     $atts = shortcode_atts(
         array(
@@ -46,27 +43,23 @@ function accueil_bloc2_developpement($atts)
     );
 
     ob_start();
-
-    //   if ($atts['src'] != "") {
     ?>
-    <div id="accueil-presentation">
-        <h2 class="accueil-presentation-h2"> <?= $atts['titre'] ?> </h2>
-        <p class="accueil-presentation-p"> <?= $atts['parag'] ?> </p>
-    </div>
+        <div id="accueil-presentation">
+            <h2 class="accueil-presentation-h2"> <?= $atts['titre'] ?> </h2>
+            <p class="accueil-presentation-p"> <?= $atts['parag'] ?> </p>
+        </div>
     <?php
-    //    }
-
     $output = ob_get_contents();
     ob_end_clean();
+
     return $output;
 }
 
 add_shortcode('titre-et-paragraphe-1', 'accueil_bloc2_developpement');
 
-/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
 
 /** ** bloc présentation produits - image et titre ** ** **/
-function accueil_carte_produit($atts)
+function accueil_carte_produit($atts)       // Affichage des cartes des fruits
 {
     $atts = shortcode_atts(
         array(
@@ -78,7 +71,6 @@ function accueil_carte_produit($atts)
     );
 
     ob_start();
-
     if ($atts['src'] != "") {
     ?>
         <div class="image-produit" style="background-image: url(<?= $atts['src'] ?>)">
@@ -86,15 +78,14 @@ function accueil_carte_produit($atts)
         </div>
     <?php
     }
-
     $output = ob_get_contents();
     ob_end_clean();
+
     return $output;
 }
 
 add_shortcode('carte-produit', 'accueil_carte_produit');
 
-/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
 
 /** ** ** ** ** ** ** ** ** C T A ** ** ** ** ** ** ** ** **/
 function buttons($atts)
@@ -108,21 +99,19 @@ function buttons($atts)
     );
 
     ob_start();
-
     ?>
-    <div class="button-box">
-        <p class="button-text"><?= $atts['label'] ?></p>
-    </div>
+        <div class="button-box">
+            <p class="button-text"><?= $atts['label'] ?></p>
+        </div>
     <?php
-
     $output = ob_get_contents();
     ob_end_clean();
+
     return $output;
 }
 
 add_shortcode('btn', 'buttons');
 
-/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
 
 /** ** ** ** ** ** *** bloc bas de page ** ** ** ** ** ** **/
 function bloc_bas_de_page($atts)
@@ -136,23 +125,20 @@ function bloc_bas_de_page($atts)
     );
 
     ob_start();
-
     if ($atts['src'] != "") {
     ?>
-
         <div class="image-canettes" style="background-image: url(<?= $atts['src'] ?>)">
         </div>
     <?php
     }
-
     $output = ob_get_contents();
     ob_end_clean();
+
     return $output;
 }
 
 add_shortcode('section-inferieure', 'bloc_bas_de_page');
 
-/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
 
 /** ** ** ** ** ** ** ** * Feedbacks ** ** ** ** ** ** ** **/
 function retour_d_experience($atts)
@@ -168,7 +154,6 @@ function retour_d_experience($atts)
     );
 
     ob_start();
-
     if ($atts['src'] != "") {
     ?>
         <div class="feedback-box">
@@ -180,17 +165,17 @@ function retour_d_experience($atts)
         </div>
     <?php
     }
-
     $output = ob_get_contents();
     ob_end_clean();
+
     return $output;
 }
 
 add_shortcode('feedback', 'retour_d_experience');
 
 
-/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
 /* ** ** ** ** ** P A G E - NOUS - RENCONTRER ** ** ** ** **/
+
 /** ** ** ** ** ** ** ** ** L'équipe ** ** ** ** ** ** ** **/
 function lequipe($atts)
 {
@@ -205,7 +190,6 @@ function lequipe($atts)
     );
 
     ob_start();
-
     if ($atts['src'] != "") {
     ?>
         <div id="member-box">
@@ -215,19 +199,18 @@ function lequipe($atts)
         </div>
     <?php
     }
-
     $output = ob_get_contents();
     ob_end_clean();
+
     return $output;
 }
 
 add_shortcode('the-staff', 'lequipe');
 
 
-/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
 /* ** ** ** ** ** ** P A G E - COMMANDER * ** ** ** ** ** **/
-/** ** ** ** ** ** ** ** ** * Caddey ** ** ** ** ** ** ** **/
 
+/** ** ** ** ** ** ** ** ** * Caddey ** ** ** ** ** ** ** **/
 function corbeille($atts)
 {
     $atts = shortcode_atts(
@@ -241,7 +224,6 @@ function corbeille($atts)
     ob_start();
     if ($atts['nom-produit'] != "") {
     ?>
-
         <div class="le-caddey">
             <div class="choix-cadre">
                 <div class="affichage-quantite-cadre">
@@ -257,8 +239,7 @@ function corbeille($atts)
                 <p class="validation-typo"> OK </p>
             </div>
         </div>
-
-<?php
+    <?php
     }
     $output = ob_get_contents();
     ob_end_clean();
