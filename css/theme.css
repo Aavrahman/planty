@@ -346,12 +346,16 @@ h1 {
     line-height: normal;
     text-transform: uppercase;
     text-align: center;
+}
 
-    @media (min-width: 782px) and (max-width: 1439.99px) {
+@media (min-width: 782px) and (max-width: 1439.99px) {
+    h1 {
         font-size: var(--tablet-h1-font-size);
     }
+}
 
-    @media (min-width: 320px) and (max-width: 781.99px) {
+@media (min-width: 320px) and (max-width: 781.99px) {
+    h1 {
         font-size: var(--mobile-h1-font-size);
     }
 }

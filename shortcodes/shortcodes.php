@@ -17,7 +17,7 @@ function accueil_bloc_titre($atts)          //* Affichage bloc superieur page  a
     if ($atts['src'] != "") {
     ?>
         <div class="titre-et-image">
-            <img src=" <?= $atts['src'] ?>)">
+            <img src=" <?= $atts['src'] ?>)" alt="Canette Planty">
         </div>
     <?php
     }
@@ -157,7 +157,7 @@ function retour_d_experience($atts)
     if ($atts['src'] != "") {
     ?>
         <div class="feedback-box">
-            <img class="feed-img" src="<?= $atts['src'] ?>">
+            <img class="feed-img" src="<?= $atts['src'] ?>" alt="Témoignage">
             <div class="retour">
                 <h3 class="customer-name"><?= $atts['the-name'] ?></h3>
                 <p class="feed-text"><?= $atts['the-comment'] ?></p>
@@ -193,7 +193,7 @@ function lequipe($atts)
     if ($atts['src'] != "") {
     ?>
         <div id="member-box">
-            <img class="member-img" src="<?= $atts['src'] ?>">
+            <img class="member-img" src="<?= $atts['src'] ?>" alt="Image de membre">
             <p class="member-name"><?= $atts['member-name'] ?></p>
             <p><?= $atts['member-duty'] ?></p>
         </div>

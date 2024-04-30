@@ -355,7 +355,7 @@ hr {
 
 @media (min-width: 320px) and (max-width: 781.99px) {
     .wp-block-separator:nth-of-type(2) {
-        top: 81.75; /* 1308px;  */
+        top: 81.75rem; /* 1308px;  */
     }
 }
 
